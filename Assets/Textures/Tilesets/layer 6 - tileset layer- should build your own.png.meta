@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 26
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,9 +125,2205 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf7c8110e248fc45aef31ca47d7c279
+      internalID: 1433497577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c8f8ed942bff3408048752a0b82b65
+      internalID: 84703893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ce3fa1db8d24c4894b56a8a9cc6433
+      internalID: -1144174709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053c61cbd669c034ca75a76d796ad038
+      internalID: -843779866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333cd5476f36fb343a5fc3a6491d6971
+      internalID: -823320222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3960f183ea1fa3e4d91c5b55bb28ed42
+      internalID: 997652483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8188aab60e00f5e4cbfed993274936f8
+      internalID: -1796360954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d91ea9369bfd2049b29f25e39930523
+      internalID: 788911589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58088113c880da742b09da4600cafe36
+      internalID: -1383071713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b067cbcb781fcc4f856428254e40c5c
+      internalID: 910142512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb6b61e701d06a40939a893abd13547
+      internalID: 1435242716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e782814cfeba2be40a5dd1a3e6dd33f2
+      internalID: 1009281599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b41b97f0c0a61f4c96771852f0085b9
+      internalID: -1613340065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820fc7e59387f0c4d8be6750ee1aa762
+      internalID: 888923742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 243
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d367905fb6093d44ba7aa0ce7eba57b
+      internalID: 1259712722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8cb2ed6699bb34b8b4024f2842a817
+      internalID: -314989114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d14e3fa703d9e41b45145e759741cd
+      internalID: -1859747237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35d37ecb67491e40a2a626c79ee9cb5
+      internalID: 568724853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b23f7f639e72ba46bb463eaadfd5a55
+      internalID: 123521018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30158c8561ca73145aa0f9750893548b
+      internalID: -1108839816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629fe267963d8b143b68a53ad45b5abe
+      internalID: 2081153925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656fb0320a5a32e4a96372e3ffc52487
+      internalID: -1612885581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_22
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f972be09d1c0b7f48922fb937c2f6816
+      internalID: 785631761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe41d55f69a0d04d8ab6a31b89d3b95
+      internalID: -1845819290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec555f679645ba4db3089e69b0b828e
+      internalID: 1692040570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd0a26fd622a9f40a95778e467c1687
+      internalID: -1773960099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53fbacc8342bb845bf507420d898dde
+      internalID: 230222439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb03c0356b50f5045a01c8d8afcdc843
+      internalID: -1549003637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_28
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8fc4089deddc6429d0969cfdad63ba
+      internalID: -661762012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 216
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147ce3f8c2624314f85cec80000db7f4
+      internalID: -55133190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5da20e5120c0fc4e9f0c67fdf856b5c
+      internalID: -486694471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 189
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93830d25afa666a48bd9df6fea381e4d
+      internalID: 265637889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 189
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0c156d85e3f3140a9556882d112f5e
+      internalID: -1586048940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 189
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14d42f392f21cd459c02c2bfbe94df1
+      internalID: 338009348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 189
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd0a033da3163a4b8208ff52ad0ae00
+      internalID: 324189441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_35
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 189
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbb47b64fc2f01479bcece1a4120171
+      internalID: 1497725460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_36
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 189
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0daef958588c834681e7587e6550cda
+      internalID: 1942772625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fd94a75b25940489ca9cecbc040c62
+      internalID: 172478219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 162
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11469524ee38d4489e445f19e7a6eac
+      internalID: -38579693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_39
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 162
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5394e909e46f552428f8f32f9d3b895a
+      internalID: 1530222308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_40
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 162
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd76c4740aa4d39448c9579b58cf92bf
+      internalID: -2055985230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22299248879f6d44bb4ceca84fba86f
+      internalID: -595175081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 135
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0600910663af14f4a8f1899094903333
+      internalID: 1981178125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 135
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85f4b3ad9e44924fbdc26e1296923b9
+      internalID: 1168621891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_44
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 135
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cb4e52c387a804992fbd8b23636c10
+      internalID: -1483516133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_45
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 135
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ced4d003c4a824c87ef3e4655f07b5
+      internalID: 2018266838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d21918e6b935fc4a9356b645f9af47b
+      internalID: 715613835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 108
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a02b84f509ac4f479667f028b5aff87
+      internalID: 327945376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 108
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b00d868d834c3d4e98efb6e98ead23e
+      internalID: 21481699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 108
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa840b578d289c843be87f933a48f485
+      internalID: 528921774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_50
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 108
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc14c6f8503d8ee40b2754c5ffdc286d
+      internalID: -1710640103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_51
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 108
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ec57eaee307ff4cbcd2841e9434f20
+      internalID: 108697654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 108
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc58a998b9446d459706033fdb7558a
+      internalID: 277999853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296a7bf577fc8b84895a19a180b98098
+      internalID: -1515293851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 81
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1167938176bde845af1b54dea8e252f
+      internalID: 1124888829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 81
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe44100f817d0d41ad7c2cbda25d8f8
+      internalID: 1696181288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_56
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 81
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7a3b3484931614684c4f9183f68dcc
+      internalID: 374506950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_57
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 81
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0cb7136e4b1ca4abef785c6cc95a9d
+      internalID: 290149880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_58
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 81
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7c5ba11182151428e4c93ea50eda26
+      internalID: 1412644738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd748bba6d6758642b34661f8503fd3f
+      internalID: 956884101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_60
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a555d3de5fc19d45a5a184f26756643
+      internalID: -1108540155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e674f0641f10edc4eadfda15df928447
+      internalID: 903389036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcffdfb9c2b0cb042bb96de454e7304f
+      internalID: -1985832972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3752b638e3a231e478b9beded90648d9
+      internalID: -392819785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecb93d3f2f6a614090f6c2bc7c8df9f
+      internalID: -1390272633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9172ba0eee228fb409096e851a0605d4
+      internalID: 168224274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_66
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd379ca03c93ce443a8c6df25c43511e
+      internalID: -1624995950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9ff34105eef764da06d9693ae57f7b
+      internalID: -1844666096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_68
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9983fc1f2ca22744780f4dbab74baf5b
+      internalID: -674513577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5717e4a5e148d514abfa01928e694110
+      internalID: -196134739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_70
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98b0dea00f074348b72e5611b2dda7e
+      internalID: 215185202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_71
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdeea7fa01f929e44ad44f398c19fd24
+      internalID: -513395537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_72
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f0a0b060e76e24da2ad972f080865a
+      internalID: 401582981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_73
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 54
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dde5a30236da61479716d5fd0513dfd
+      internalID: 1291831891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5bb1f8fbecf794b9d6e9ba5f3cb48b
+      internalID: -126159368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f85aea43515c04e91b89a4262818fb
+      internalID: 68210327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa06496780d464642933c2ab5ee24291
+      internalID: -2074201451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_77
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119bf641f8107f945a938b284ad3dcd7
+      internalID: -778814233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4258cdc9ec5858b4ba2eeeb8ec7fd375
+      internalID: 428998379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51863fca0137e3247826fed2ebefd792
+      internalID: -1285510724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c657a157de1b94c96ee2bd641812b8
+      internalID: 706683288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_81
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca43ff4cd6ccb4d44b65ab9096af5db0
+      internalID: -645548932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5eec2943863214d8d3fa599cd76441
+      internalID: -684450112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_83
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336da59634b414f4c8c72cc23c4aebcd
+      internalID: 1001010923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_84
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560064cfd1bd66343a82ce46523620fc
+      internalID: -171768378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_85
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c19a4a860e4527449356e2e2a161ef7
+      internalID: -1714022521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_86
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128444e4ccde52a48a113b3e85733076
+      internalID: -626897575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_87
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a33552fa8bed14995b9bbcdd1dbadf
+      internalID: 512261591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_88
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 27
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c10d7be20e28c24e850a7c3f85d502f
+      internalID: 1420439909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5f3ca55a8a3134a96e666ebf179edb
+      internalID: -1580360361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11753c4a548008844b540c1e60cf4e52
+      internalID: -392752102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_91
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ed33aabd3bf584f9fa34f8d4d93f71
+      internalID: 1842552509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c6a7af4dedec94e8762e8d2e18421f
+      internalID: -786369723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_93
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6df238e36c2b6469d708db6bf76e91
+      internalID: -256193187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_94
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8aa5d55afc00124b94b509de8b8d158
+      internalID: 132250303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_95
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6454e94f5b08dc84b8c2cc318e5a6233
+      internalID: -207353972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_96
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9087e39f3c0083b4bbadb1b5efd668a2
+      internalID: 1833627711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1f0e5f511d6ee45937e5ae94d4fbe0
+      internalID: 332397769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_98
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1801cd6101dbc9b479b1126586b13657
+      internalID: 673141758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_99
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f3c7ce82dcfb64a9ed270f590caad0
+      internalID: 161031304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_100
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b424aebd6c56b6f4283e61e239e7e1f2
+      internalID: -1570135656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_101
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501311d0e4969c443b5bd307476538be
+      internalID: -64605500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_102
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5bbaeb51aaa1a4f8c7a281a0d4391e
+      internalID: 1397363085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer 6 - tileset layer- should build your own_103
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f730c5b640f5054b85895edcf64387f
+      internalID: -1067607200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +2334,111 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      layer 6 - tileset layer- should build your own_90: -392752102
+      layer 6 - tileset layer- should build your own_102: 1397363085
+      layer 6 - tileset layer- should build your own_37: 172478219
+      layer 6 - tileset layer- should build your own_63: -392819785
+      layer 6 - tileset layer- should build your own_80: 706683288
+      layer 6 - tileset layer- should build your own_87: 512261591
+      layer 6 - tileset layer- should build your own_83: 1001010923
+      layer 6 - tileset layer- should build your own_19: -1108839816
+      layer 6 - tileset layer- should build your own_33: 338009348
+      layer 6 - tileset layer- should build your own_8: -1383071713
+      layer 6 - tileset layer- should build your own_21: -1612885581
+      layer 6 - tileset layer- should build your own_92: -786369723
+      layer 6 - tileset layer- should build your own_71: -513395537
+      layer 6 - tileset layer- should build your own_17: 568724853
+      layer 6 - tileset layer- should build your own_66: -1624995950
+      layer 6 - tileset layer- should build your own_25: -1773960099
+      layer 6 - tileset layer- should build your own_77: -778814233
+      layer 6 - tileset layer- should build your own_53: -1515293851
+      layer 6 - tileset layer- should build your own_12: -1613340065
+      layer 6 - tileset layer- should build your own_7: 788911589
+      layer 6 - tileset layer- should build your own_57: 290149880
+      layer 6 - tileset layer- should build your own_49: 528921774
+      layer 6 - tileset layer- should build your own_1: 84703893
+      layer 6 - tileset layer- should build your own_16: -1859747237
+      layer 6 - tileset layer- should build your own_70: 215185202
+      layer 6 - tileset layer- should build your own_82: -684450112
+      layer 6 - tileset layer- should build your own_40: -2055985230
+      layer 6 - tileset layer- should build your own_4: -823320222
+      layer 6 - tileset layer- should build your own_59: 956884101
+      layer 6 - tileset layer- should build your own_3: -843779866
+      layer 6 - tileset layer- should build your own_89: -1580360361
+      layer 6 - tileset layer- should build your own_67: -1844666096
+      layer 6 - tileset layer- should build your own_79: -1285510724
+      layer 6 - tileset layer- should build your own_30: -486694471
+      layer 6 - tileset layer- should build your own_93: -256193187
+      layer 6 - tileset layer- should build your own_22: 785631761
+      layer 6 - tileset layer- should build your own_88: 1420439909
+      layer 6 - tileset layer- should build your own_44: -1483516133
+      layer 6 - tileset layer- should build your own_64: -1390272633
+      layer 6 - tileset layer- should build your own_18: 123521018
+      layer 6 - tileset layer- should build your own_61: 903389036
+      layer 6 - tileset layer- should build your own_41: -595175081
+      layer 6 - tileset layer- should build your own_103: -1067607200
+      layer 6 - tileset layer- should build your own_75: 68210327
+      layer 6 - tileset layer- should build your own_51: 108697654
+      layer 6 - tileset layer- should build your own_69: -196134739
+      layer 6 - tileset layer- should build your own_62: -1985832972
+      layer 6 - tileset layer- should build your own_9: 910142512
+      layer 6 - tileset layer- should build your own_24: 1692040570
+      layer 6 - tileset layer- should build your own_55: 1696181288
+      layer 6 - tileset layer- should build your own_65: 168224274
+      layer 6 - tileset layer- should build your own_85: -1714022521
+      layer 6 - tileset layer- should build your own_86: -626897575
+      layer 6 - tileset layer- should build your own_39: 1530222308
+      layer 6 - tileset layer- should build your own_28: -661762012
+      layer 6 - tileset layer- should build your own_100: -1570135656
+      layer 6 - tileset layer- should build your own_5: 997652483
+      layer 6 - tileset layer- should build your own_42: 1981178125
+      layer 6 - tileset layer- should build your own_95: -207353972
+      layer 6 - tileset layer- should build your own_73: 1291831891
+      layer 6 - tileset layer- should build your own_97: 332397769
+      layer 6 - tileset layer- should build your own_31: 265637889
+      layer 6 - tileset layer- should build your own_36: 1942772625
+      layer 6 - tileset layer- should build your own_91: 1842552509
+      layer 6 - tileset layer- should build your own_48: 21481699
+      layer 6 - tileset layer- should build your own_15: -314989114
+      layer 6 - tileset layer- should build your own_50: -1710640103
+      layer 6 - tileset layer- should build your own_11: 1009281599
+      layer 6 - tileset layer- should build your own_54: 1124888829
+      layer 6 - tileset layer- should build your own_46: 715613835
+      layer 6 - tileset layer- should build your own_81: -645548932
+      layer 6 - tileset layer- should build your own_0: 1433497577
+      layer 6 - tileset layer- should build your own_84: -171768378
+      layer 6 - tileset layer- should build your own_98: 673141758
+      layer 6 - tileset layer- should build your own_99: 161031304
+      layer 6 - tileset layer- should build your own_68: -674513577
+      layer 6 - tileset layer- should build your own_76: -2074201451
+      layer 6 - tileset layer- should build your own_10: 1435242716
+      layer 6 - tileset layer- should build your own_43: 1168621891
+      layer 6 - tileset layer- should build your own_38: -38579693
+      layer 6 - tileset layer- should build your own_14: 1259712722
+      layer 6 - tileset layer- should build your own_26: 230222439
+      layer 6 - tileset layer- should build your own_94: 132250303
+      layer 6 - tileset layer- should build your own_101: -64605500
+      layer 6 - tileset layer- should build your own_35: 1497725460
+      layer 6 - tileset layer- should build your own_58: 1412644738
+      layer 6 - tileset layer- should build your own_6: -1796360954
+      layer 6 - tileset layer- should build your own_13: 888923742
+      layer 6 - tileset layer- should build your own_56: 374506950
+      layer 6 - tileset layer- should build your own_32: -1586048940
+      layer 6 - tileset layer- should build your own_34: 324189441
+      layer 6 - tileset layer- should build your own_96: 1833627711
+      layer 6 - tileset layer- should build your own_29: -55133190
+      layer 6 - tileset layer- should build your own_74: -126159368
+      layer 6 - tileset layer- should build your own_2: -1144174709
+      layer 6 - tileset layer- should build your own_72: 401582981
+      layer 6 - tileset layer- should build your own_20: 2081153925
+      layer 6 - tileset layer- should build your own_23: -1845819290
+      layer 6 - tileset layer- should build your own_78: 428998379
+      layer 6 - tileset layer- should build your own_27: -1549003637
+      layer 6 - tileset layer- should build your own_60: -1108540155
+      layer 6 - tileset layer- should build your own_47: 327945376
+      layer 6 - tileset layer- should build your own_52: 277999853
+      layer 6 - tileset layer- should build your own_45: 2018266838
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
