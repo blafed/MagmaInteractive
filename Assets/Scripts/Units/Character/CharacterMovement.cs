@@ -2,7 +2,7 @@ namespace Mend
 {
     using UnityEngine;
 
-    public class HeroMovement : MonoBehaviour
+    public class CharacterMovement : MonoBehaviour
     {
         public float speed = 5;
         public bool allowVerticalMovement;
@@ -13,27 +13,27 @@ namespace Mend
 
         public bool isMoving => movementInput.x.Abs() > 0.1f;
 
-        Hero hero;
+        Character character;
 
         private void Awake()
         {
-            hero = GetComponentInParent<Hero>();
+            character = GetComponentInParent<Character>();
         }
         private void Start()
         {
-            velocityIndex = hero.AddVelocity();
+            velocityIndex = character.AddVelocity();
         }
         private void FixedUpdate()
         {
-            if (hero.dash != null && hero.dash.isDashing)
+            if (character.dash != null && character.dash.isDashing)
             {
-                hero.velocities[velocityIndex] = Vector2.zero;
+                character.velocities[velocityIndex] = Vector2.zero;
                 return;
             }
             var movementInput = this.movementInput;
             if (!allowVerticalMovement)
                 movementInput.y = 0;
-            hero.velocities[velocityIndex] = movementInput * speed;
+            character.velocities[velocityIndex] = movementInput * speed;
 
             if (movementInput.x < 0)
             {

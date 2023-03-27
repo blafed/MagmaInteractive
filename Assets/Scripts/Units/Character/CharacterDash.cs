@@ -2,7 +2,7 @@ namespace Mend
 {
     using UnityEngine;
 
-    public class HeroDash : MonoBehaviour
+    public class CharacterDash : MonoBehaviour
     {
         public float powerCost = .1f;
         public float speed = 5;
@@ -12,7 +12,7 @@ namespace Mend
         float dashTimer;
         float cooldownTimer;
 
-        Hero hero;
+        Character unit;
 
         int velocityIndex;
 
@@ -30,13 +30,13 @@ namespace Mend
 
         private void Start()
         {
-            hero = GetComponentInParent<Hero>();
-            velocityIndex = hero.AddVelocity();
+            unit = GetComponentInParent<Character>();
+            velocityIndex = unit.AddVelocity();
         }
 
         public bool CanDash()
         {
-            return hero.power.power >= powerCost && dashTimer <= 0 && cooldownTimer <= 0;
+            return unit.power.power >= powerCost && dashTimer <= 0 && cooldownTimer <= 0;
         }
         public void Dash()
         {
@@ -44,7 +44,7 @@ namespace Mend
             go.transform.parent = transform;
             dashTimer = duration;
             cooldownTimer = cooldown;
-            hero.power.UsePower(powerCost);
+            unit.power.UsePower(powerCost);
         }
 
         public void Stop()
@@ -58,12 +58,12 @@ namespace Mend
             if (dashTimer > 0)
             {
                 dashTimer -= Time.fixedDeltaTime;
-                hero.velocities[velocityIndex] = transform.right * hero.transform.localScale.x * speed;
+                unit.velocities[velocityIndex] = transform.right * unit.transform.localScale.x * speed;
             }
             else
             {
                 cooldownTimer = Mathf.MoveTowards(cooldownTimer, 0, Time.fixedDeltaTime);
-                hero.velocities[velocityIndex] = Vector2.zero;
+                unit.velocities[velocityIndex] = Vector2.zero;
                 dashTimer = Mathf.MoveTowards(dashTimer, 0, Time.fixedDeltaTime);
                 if (effectInstance)
                     Destroy(effectInstance);

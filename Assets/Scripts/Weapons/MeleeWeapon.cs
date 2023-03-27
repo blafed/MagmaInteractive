@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 namespace Mend
 {
@@ -12,7 +14,7 @@ namespace Mend
         bool _isAttacking;
 
 
-        [SerializeField] Collider2D[] colliders;
+        [SerializeField] GameObject colliders;
         [SerializeField] CreateEffectOptions effect;
 
         float delayTimer;
@@ -29,6 +31,12 @@ namespace Mend
             activeTimer = 0;
             if (effect)
                 effect.Create(transform);
+
+            var c = colliders;
+            // colliders = Instantiate(c, c.transform.position, c.transform.rotation, c.transform.parent);
+            // colliders.name = c.name;
+            // Destroy(c);
+            interactions.Clear();
         }
         public override bool CanAttack()
         {
@@ -36,14 +44,17 @@ namespace Mend
         }
 
 
-        private void Start()
+        protected override void Start()
         {
-            colliders.ForEach(x => x.enabled = false);
+            base.Start();
+            // colliders.ForEach(x => x.enabled = false);
+            colliders.SetActive(false);
         }
 
         private void FixedUpdate()
         {
-            colliders.ForEach(x => x.enabled = (isAttacking && activeTimer < activationTime && delayTimer >= delay));
+            colliders.SetActive(isAttacking && activeTimer < activationTime && delayTimer >= delay);
+            // colliders.ForEach(x => x.enabled = (isAttacking && activeTimer < activationTime && delayTimer >= delay));
             if (activeTimer > activationTime)
                 _isAttacking = false;
 
@@ -56,18 +67,28 @@ namespace Mend
                 else
                 {
                     activeTimer += Time.fixedDeltaTime;
-                    colliders.ForEach(x => x.enabled = true);
+                    // colliders.ForEach(x => x.enabled = true);
+                    colliders.SetActive(true);
+
                 }
             }
         }
 
 
-        private void OnTriggerEnter2D(Collider2D other)
+        HashSet<Health> interactions = new HashSet<Health>();
+
+
+        public void OnTriggerEnter2D(Collider2D other)
         {
             Health health;
             if (health = other.GetComponent<Health>())
             {
-                other.GetComponent<Health>().TakeDamage(damage, this);
+                if (health == owner.health)
+                    return;
+                if (interactions.Contains(health))
+                    return;
+                health.TakeDamage(damage, this);
+                interactions.Add(health);
             }
         }
 

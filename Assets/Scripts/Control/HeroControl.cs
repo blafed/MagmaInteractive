@@ -13,17 +13,17 @@ namespace Mend
 
         void Update()
         {
-            hero.movement.movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-            if (Input.GetKeyDown(KeyCode.Space))
-                hero.jump.Jump();
-            if (Input.GetButton("Fire1"))
+            var inp = InputManager.instance;
+            hero.movement.movementInput = inp.movement;
+            if (inp.jump)
+                if (hero.jump.CanJump())
+                    hero.jump.Jump();
+            if (inp.attack)
                 if (hero.weapon.CanAttack())
                     hero.weapon.Attack();
-            if (Input.GetButtonDown("Dash"))
-            {
+            if (inp.dash)
                 if (hero.dash.CanDash())
                     hero.dash.Dash();
-            }
         }
     }
 }

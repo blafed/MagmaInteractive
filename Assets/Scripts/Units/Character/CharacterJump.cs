@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Mend
 {
-    public class HeroJump : MonoBehaviour
+    public class CharacterJump : MonoBehaviour
     {
         public float reactivationTime = 0;
         public int maxJumps = 2;
@@ -20,21 +20,21 @@ namespace Mend
         public bool isJumping => jumpCounter > 0;
 
         public int jumpCounter { get; private set; }
-        public Hero hero { get; private set; }
+        public Character character { get; private set; }
 
 
         bool wasGrounded;
 
         Vector2 velocity
         {
-            get => hero.velocities[velocityIndex];
-            set => hero.velocities[velocityIndex] = value;
+            get => character.velocities[velocityIndex];
+            set => character.velocities[velocityIndex] = value;
         }
 
 
         private void Awake()
         {
-            hero = GetComponentInParent<Hero>();
+            character = GetComponentInParent<Character>();
 
 
         }
@@ -42,7 +42,7 @@ namespace Mend
         private void Start()
         {
 
-            velocityIndex = hero.AddVelocity();
+            velocityIndex = character.AddVelocity();
             jumpTime = this.reactivationTime;
         }
 
@@ -51,16 +51,16 @@ namespace Mend
         {
             if (isJumping)
                 jumpTime += Time.fixedDeltaTime;
-            if (hero.isGrounded && jumpTime > regroundThreshold)
+            if (character.isGrounded && jumpTime > regroundThreshold)
             {
                 jumpCounter = 0;
             }
-            velocity = Vector2.MoveTowards(velocity, Vector2.zero, hero.effectiveGravity.magnitude * Time.fixedDeltaTime);
-            if (!wasGrounded && hero.isGrounded)
+            velocity = Vector2.MoveTowards(velocity, Vector2.zero, character.effectiveGravity.magnitude * Time.fixedDeltaTime);
+            if (!wasGrounded && character.isGrounded)
             {
                 Land();
             }
-            wasGrounded = hero.isGrounded;
+            wasGrounded = character.isGrounded;
         }
 
         void Land()
@@ -69,15 +69,22 @@ namespace Mend
             jumpCounter = 0;
         }
 
-        public void Jump()
+        public bool CanJump()
         {
             if (jumpTime < reactivationTime)
-                return;
+                return false;
             if (jumpCounter >= maxJumps)
-                return;
-            if (!hero.isGrounded && jumpCounter == 0)
-                return;
-            hero.gravityVelocity = Vector2.zero;
+                return false;
+            if (!character.isGrounded && jumpCounter == 0)
+                return false;
+
+            return true;
+        }
+
+        public void Jump()
+        {
+
+            character.gravityVelocity = Vector2.zero;
 
             if (jumpCounter < jumpEffects.Length)
                 if (jumpEffects[jumpCounter])

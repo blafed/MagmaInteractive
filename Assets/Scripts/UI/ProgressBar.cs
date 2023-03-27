@@ -30,7 +30,7 @@ namespace Mend.UI
             while (t < 1f)
             {
                 t += Time.deltaTime / duration;
-                rectFill.fillAmount = Mathf.Lerp(startFill, fill, t * t);
+                rectFill.fillAmount = Mathf.Lerp(startFill, fill, Mathf.Sqrt(t * t));
                 yield return null;
             }
         }

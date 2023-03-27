@@ -1,4 +1,4 @@
-namespace Mend
+namespace Mend.WeaponSystem
 {
     using UnityEngine;
 
