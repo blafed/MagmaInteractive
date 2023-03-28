@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: heart slam (168x79)_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1185
+        width: 19
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c926bbe46a1da2448e4d7b43e0a8c16
+      internalID: 1268605785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1106
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57bbc37602a3104a87879fdf06231ee
+      internalID: 1606009706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1027
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076d55182712674439e265df1d867a81
+      internalID: -1196443164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 965
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caccb8c117c49c4448422c7ee03d4062
+      internalID: -385303801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 948
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba409e9103e7384e9d38125de0e31f9
+      internalID: -1421758527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 869
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d60d34a2c190074bb1d52a98db4d2bd
+      internalID: -560273623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 790
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde5609ce9b2c6e4d906033ea08bc3ea
+      internalID: 658915290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 711
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f63dac90a5bc2d4ba93074ebfddbc4c
+      internalID: -482380338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 638
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7841042b2e6a1d4fb7a05cf1523b053
+      internalID: -1440522592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 553
+        width: 37
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fd84225fb8e834d9790019dc7efd74
+      internalID: 341158027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 474
+        width: 74
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206e964d1366cb247bc4b0caba3ff5df
+      internalID: -171843181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 395
+        width: 90
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b60d38b4f71034bac79fc3171578f7
+      internalID: 564580660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 138
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fb334a580dd164090116773a13e1b6
+      internalID: -717062289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart slam (168x79)_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 316
+        width: 72
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed059eabaca7d3547955ebf2f9f178a1
+      internalID: -135173616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +432,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      heart slam (168x79)_12: -717062289
+      heart slam (168x79)_5: -560273623
+      heart slam (168x79)_0: 1268605785
+      heart slam (168x79)_13: -135173616
+      heart slam (168x79)_4: -1421758527
+      heart slam (168x79)_6: 658915290
+      heart slam (168x79)_1: 1606009706
+      heart slam (168x79)_8: -1440522592
+      heart slam (168x79)_7: -482380338
+      heart slam (168x79)_11: 564580660
+      heart slam (168x79)_2: -1196443164
+      heart slam (168x79)_10: -171843181
+      heart slam (168x79)_9: 341158027
+      heart slam (168x79)_3: -385303801
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

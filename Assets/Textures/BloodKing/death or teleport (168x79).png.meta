@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: death or teleport (168x79)_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 790
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecba649855dbf240b20e1b57c3cd5cc
+      internalID: 715544580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 803
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380cde3feb65cae47b4c6e339a711fb7
+      internalID: 289695459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 711
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e25ac89d3afdac46bf2d721317d67e3
+      internalID: 1732784381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 632
+        width: 40
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ca4c0f05f0bc24fa662254f6207cea
+      internalID: 902467010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 553
+        width: 51
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69f23dbfcf282f40ac94267c65693b2
+      internalID: 738996793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 474
+        width: 55
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23110cf5c7ed574eab240b25102334b
+      internalID: 809029904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 395
+        width: 65
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038ae310730f7fe44a9da3196708e964
+      internalID: -1012636347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_7
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 316
+        width: 24
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e8d5e5ebeeb6148988b6a7c873173d
+      internalID: -1869980354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 316
+        width: 46
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b16109e80c201d43aa224fa8548fc0d
+      internalID: -678820486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 235
+        width: 89
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef09df94c79f3dc45ae776ef98a0f36b
+      internalID: -1259019774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death or teleport (168x79)_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 154
+        width: 92
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7e2c60f4e5bca4b900cfa9d5b0269a
+      internalID: -453610886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +369,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      death or teleport (168x79)_8: -678820486
+      death or teleport (168x79)_2: 1732784381
+      death or teleport (168x79)_6: -1012636347
+      death or teleport (168x79)_3: 902467010
+      death or teleport (168x79)_10: -453610886
+      death or teleport (168x79)_0: 715544580
+      death or teleport (168x79)_4: 738996793
+      death or teleport (168x79)_1: 289695459
+      death or teleport (168x79)_7: -1869980354
+      death or teleport (168x79)_5: 809029904
+      death or teleport (168x79)_9: -1259019774
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

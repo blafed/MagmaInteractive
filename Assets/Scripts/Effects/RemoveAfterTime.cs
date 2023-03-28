@@ -1,23 +1,20 @@
-namespace Mend
+using UnityEngine;
+
+public class RemoveAfterTime : MonoBehaviour
 {
-    using UnityEngine;
+    public float time = 1;
+    private float timer;
 
-    public class RemoveAfterTime : MonoBehaviour
+    private void Start()
     {
-        public float time = 1;
-        private float timer;
+        timer = Time.time;
+    }
 
-        private void Start()
+    private void FixedUpdate()
+    {
+        if (Time.time > timer + time)
         {
-            timer = Time.time;
-        }
-
-        private void FixedUpdate()
-        {
-            if (Time.time > timer + time)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 }

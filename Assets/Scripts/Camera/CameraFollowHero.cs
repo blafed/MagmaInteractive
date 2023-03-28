@@ -1,19 +1,16 @@
-namespace Mend
+using UnityEngine;
+
+public class CameraFollowHero : MonoBehaviour
 {
-    using UnityEngine;
+    public float speed = 1;
 
-    public class CameraFollowHero : MonoBehaviour
+    private Transform _heroTransform => Hero.current.transform;
+    private Vector3 _offset;
+
+
+    private void Update()
     {
-        public float speed = 1;
-
-        private Transform _heroTransform => Hero.current.transform;
-        private Vector3 _offset;
-
-
-        private void Update()
-        {
-            var targetPosition = _heroTransform.position + _heroTransform.rotation * _offset;
-            transform.position = Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
-        }
+        var targetPosition = _heroTransform.position + _heroTransform.rotation * _offset;
+        transform.position = Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
     }
 }

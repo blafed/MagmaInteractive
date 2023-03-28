@@ -1,9 +1,6 @@
-namespace Mend
-{
-    using UnityEngine;
+using UnityEngine;
 
-    public class HeroAttack : MonoBehaviour
-    {
-        public float relaod = 1;
-    }
+public class HeroAttack : MonoBehaviour
+{
+    public float relaod = 1;
 }

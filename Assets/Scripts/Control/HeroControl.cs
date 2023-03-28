@@ -1,29 +1,26 @@
-namespace Mend
+using UnityEngine;
+
+public class HeroControl : MonoBehaviour
 {
-    using UnityEngine;
+    public Hero hero { get; private set; }
 
-    public class HeroControl : MonoBehaviour
+    private void Awake()
     {
-        public Hero hero { get; private set; }
+        hero = GetComponentInParent<Hero>();
+    }
 
-        private void Awake()
-        {
-            hero = GetComponentInParent<Hero>();
-        }
-
-        void Update()
-        {
-            var inp = InputManager.instance;
-            hero.movement.movementInput = inp.movement;
-            if (inp.jump)
-                if (hero.jump.CanJump())
-                    hero.jump.Jump();
-            if (inp.attack)
-                if (hero.weapon.CanAttack())
-                    hero.weapon.Attack();
-            if (inp.dash)
-                if (hero.dash.CanDash())
-                    hero.dash.Dash();
-        }
+    void Update()
+    {
+        var inp = InputManager.instance;
+        hero.movement.movementInput = inp.movement;
+        if (inp.jump)
+            if (hero.jump.CanJump())
+                hero.jump.Jump();
+        if (inp.attack)
+            if (hero.weapon.CanAttack())
+                hero.weapon.Attack();
+        if (inp.dash)
+            if (hero.dash.CanDash())
+                hero.dash.Dash();
     }
 }

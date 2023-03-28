@@ -7,20 +7,16 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Mend
+public class Hero : Character
 {
-    public class Hero : Character
+
+    public static Hero current { get; private set; }
+
+    protected override void Awake()
     {
-
-        public static Hero current { get; private set; }
-
-        protected override void Awake()
-        {
-            base.Awake();
-            current = this;
-        }
-
-
+        base.Awake();
+        current = this;
     }
+
 
 }

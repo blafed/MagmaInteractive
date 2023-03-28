@@ -1,30 +1,26 @@
-namespace Mend.PoolSystem
+using UnityEngine;
+
+public class RemovePoolAfterTime : MonoBehaviour
 {
+    public float time = 1;
 
-    using UnityEngine;
-
-    public class RemovePoolAfterTime : MonoBehaviour
+    private void OnEnable()
     {
-        public float time = 1;
+        Invoke("Remove", time);
+    }
 
-        private void OnEnable()
+    private void OnDisable()
+    {
+        CancelInvoke("Remove");
+    }
+
+    private void Remove()
+    {
+        var p = GetComponent<PoolInstance>();
+
+        if (p)
         {
-            Invoke("Remove", time);
-        }
-
-        private void OnDisable()
-        {
-            CancelInvoke("Remove");
-        }
-
-        private void Remove()
-        {
-            var p = GetComponent<PoolInstance>();
-
-            if (p)
-            {
-                PoolManager.instance.Remove(p);
-            }
+            PoolManager.instance.Remove(p);
         }
     }
 }

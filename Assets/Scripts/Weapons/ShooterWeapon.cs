@@ -1,39 +1,36 @@
-namespace Mend
+using System.Diagnostics.Contracts;
+using UnityEngine;
+
+public class ShooterWeapon : Weapon
 {
-    using System.Diagnostics.Contracts;
-    using UnityEngine;
+    public float delay;
+    public GameObject projectilePrefab;
+    [SerializeField] Transform spawner;
 
-    public class ShooterWeapon : Weapon
+    public override bool isAttacking => Time.time < reloadTimer + delay;
+
+
+
+
+
+    public override void Attack()
     {
-        public float delay;
-        public GameObject projectilePrefab;
-        [SerializeField] Transform spawner;
-
-        public override bool isAttacking => Time.time < reloadTimer + delay;
+        base.Attack();
 
 
+    }
 
 
-
-        public override void Attack()
+    public Projectile Shoot()
+    {
+        var spawner = this.spawner ?? transform;
+        var go = Instantiate(projectilePrefab, spawner.position, spawner.rotation);
+        var projectile = go.GetComponent<Projectile>();
+        if (projectile)
         {
-            base.Attack();
-
-
+            projectile.owner = owner;
+            projectile.weapon = this;
         }
-
-
-        public Projectile Shoot()
-        {
-            var spawner = this.spawner ?? transform;
-            var go = Instantiate(projectilePrefab, spawner.position, spawner.rotation);
-            var projectile = go.GetComponent<Projectile>();
-            if (projectile)
-            {
-                projectile.owner = owner;
-                projectile.weapon = this;
-            }
-            return projectile;
-        }
+        return projectile;
     }
 }

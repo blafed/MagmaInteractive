@@ -1,29 +1,26 @@
 using UnityEngine;
-namespace Mend
+using UnityEngine;
+
+[System.Serializable]
+public class CreateEffectOptions
 {
-    using UnityEngine;
+    public GameObject prefab;
+    public bool parent;
 
-    [System.Serializable]
-    public class CreateEffectOptions
+
+
+    public void Create(Transform target)
     {
-        public GameObject prefab;
-        public bool parent;
-
-
-
-        public void Create(Transform target)
+        GameObject effect = GameObject.Instantiate(prefab, target.position, target.rotation);
+        if (parent)
         {
-            GameObject effect = GameObject.Instantiate(prefab, target.position, target.rotation);
-            if (parent)
-            {
-                effect.transform.SetParent(target);
-            }
+            effect.transform.SetParent(target);
         }
+    }
 
 
-        public static implicit operator bool(CreateEffectOptions options)
-        {
-            return options != null && options.prefab != null;
-        }
+    public static implicit operator bool(CreateEffectOptions options)
+    {
+        return options != null && options.prefab != null;
     }
 }

@@ -1,30 +1,27 @@
-namespace Mend
+using UnityEngine;
+
+public class HealthOverTime : MonoBehaviour
 {
-    using UnityEngine;
+    public Health health { get; private set; }
 
-    public class HealthOverTime : MonoBehaviour
+    [Tooltip("The amount of health to be added or removed per minute.")]
+    public float rate = 20;
+    public bool stepped;
+    public float stepInterval = .5f;
+
+    private void Awake()
     {
-        public Health health { get; private set; }
+        health = GetComponentInParent<Health>();
+    }
 
-        [Tooltip("The amount of health to be added or removed per minute.")]
-        public float rate = 20;
-        public bool stepped;
-        public float stepInterval = .5f;
-
-        private void Awake()
+    private void FixedUpdate()
+    {
+        if (stepped)
         {
-            health = GetComponentInParent<Health>();
+            if (Time.frameCount % (stepInterval / Time.fixedDeltaTime) == 0)
+                health.AddHp(rate * stepInterval / 60);
         }
-
-        private void FixedUpdate()
-        {
-            if (stepped)
-            {
-                if (Time.frameCount % (stepInterval / Time.fixedDeltaTime) == 0)
-                    health.AddHp(rate * stepInterval / 60);
-            }
-            else
-                health.AddHp(rate * Time.fixedDeltaTime / 60);
-        }
+        else
+            health.AddHp(rate * Time.fixedDeltaTime / 60);
     }
 }

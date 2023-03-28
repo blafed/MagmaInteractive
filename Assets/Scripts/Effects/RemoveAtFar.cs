@@ -1,26 +1,21 @@
-using Unity.VisualScripting;
+using UnityEngine;
 
-namespace Mend
+public class RemoveAtFar : MonoBehaviour
 {
-    using UnityEngine;
+    public float maxDistance = 10;
 
-    public class RemoveAtFar : MonoBehaviour
+
+    Vector2 startPosition;
+    private void Start()
     {
-        public float maxDistance = 10;
+        startPosition = transform.position;
+    }
 
-
-        Vector2 startPosition;
-        private void Start()
+    private void FixedUpdate()
+    {
+        if ((startPosition - (Vector2)transform.position).sqrMagnitude > maxDistance.Squared())
         {
-            startPosition = transform.position;
-        }
-
-        private void FixedUpdate()
-        {
-            if ((startPosition - (Vector2)transform.position).sqrMagnitude > maxDistance.Squared())
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 }

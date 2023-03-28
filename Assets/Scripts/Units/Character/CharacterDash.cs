@@ -1,74 +1,71 @@
-namespace Mend
+using UnityEngine;
+
+public class CharacterDash : MonoBehaviour
 {
-    using UnityEngine;
+    public float powerCost = .1f;
+    public float speed = 5;
+    public float duration = .5f;
+    public float cooldown = .5f;
 
-    public class CharacterDash : MonoBehaviour
+    float dashTimer;
+    float cooldownTimer;
+
+    Character unit;
+
+    int velocityIndex;
+
+
+    [SerializeField] GameObject effectObject;
+    [SerializeField] GameObject effectPrefab;
+
+
+
+    GameObject effectInstance;
+
+
+    public bool isDashing => dashTimer > 0;
+
+
+    private void Start()
     {
-        public float powerCost = .1f;
-        public float speed = 5;
-        public float duration = .5f;
-        public float cooldown = .5f;
+        unit = GetComponentInParent<Character>();
+        velocityIndex = unit.AddVelocity();
+    }
 
-        float dashTimer;
-        float cooldownTimer;
+    public bool CanDash()
+    {
+        return unit.power.power >= powerCost && dashTimer <= 0 && cooldownTimer <= 0;
+    }
+    public void Dash()
+    {
+        var go = effectInstance = Instantiate(effectPrefab, transform.position, Quaternion.identity);
+        go.transform.parent = transform;
+        dashTimer = duration;
+        cooldownTimer = cooldown;
+        unit.power.UsePower(powerCost);
+    }
 
-        Character unit;
-
-        int velocityIndex;
-
-
-        [SerializeField] GameObject effectObject;
-        [SerializeField] GameObject effectPrefab;
+    public void Stop()
+    {
+        dashTimer = 0;
+    }
 
 
-
-        GameObject effectInstance;
-
-
-        public bool isDashing => dashTimer > 0;
-
-
-        private void Start()
+    void FixedUpdate()
+    {
+        if (dashTimer > 0)
         {
-            unit = GetComponentInParent<Character>();
-            velocityIndex = unit.AddVelocity();
+            dashTimer -= Time.fixedDeltaTime;
+            unit.velocities[velocityIndex] = transform.right * unit.transform.localScale.x * speed;
         }
-
-        public bool CanDash()
+        else
         {
-            return unit.power.power >= powerCost && dashTimer <= 0 && cooldownTimer <= 0;
+            cooldownTimer = Mathf.MoveTowards(cooldownTimer, 0, Time.fixedDeltaTime);
+            unit.velocities[velocityIndex] = Vector2.zero;
+            dashTimer = Mathf.MoveTowards(dashTimer, 0, Time.fixedDeltaTime);
+            if (effectInstance)
+                Destroy(effectInstance);
         }
-        public void Dash()
-        {
-            var go = effectInstance = Instantiate(effectPrefab, transform.position, Quaternion.identity);
-            go.transform.parent = transform;
-            dashTimer = duration;
-            cooldownTimer = cooldown;
-            unit.power.UsePower(powerCost);
-        }
-
-        public void Stop()
-        {
-            dashTimer = 0;
-        }
-
-
-        void FixedUpdate()
-        {
-            if (dashTimer > 0)
-            {
-                dashTimer -= Time.fixedDeltaTime;
-                unit.velocities[velocityIndex] = transform.right * unit.transform.localScale.x * speed;
-            }
-            else
-            {
-                cooldownTimer = Mathf.MoveTowards(cooldownTimer, 0, Time.fixedDeltaTime);
-                unit.velocities[velocityIndex] = Vector2.zero;
-                dashTimer = Mathf.MoveTowards(dashTimer, 0, Time.fixedDeltaTime);
-                if (effectInstance)
-                    Destroy(effectInstance);
-            }
-            effectObject.SetActive(isDashing);
-        }
+        effectObject.SetActive(isDashing);
     }
 }
