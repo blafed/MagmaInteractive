@@ -1,13 +1,22 @@
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-namespace MagmaInteractive
+public class Hero : Character
 {
-    public class Hero : MonoBehaviour
+
+    public static Hero current { get; private set; }
+
+    protected override void Awake()
     {
-        public Health health { get; private set; }
-        public Character character { get; private set; }
+        base.Awake();
+        current = this;
     }
+
 
 }

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 416
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6395209838894074f9ef449e917d01c7
+      internalID: 1677835863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 384
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e3d3e88e179114e919e2be64fdee27
+      internalID: 1550804821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 352
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94088f6d9b8779a41936aaec9b3f2809
+      internalID: -1671147504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b75901a7af99b42979f818e4c7acdd
+      internalID: -1445374355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 288
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b7ba3fe40f72b4194f84e833d48939
+      internalID: 962030884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 309
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64d2795d5ae22e4ba8e2c63e81a69d7
+      internalID: 1525106842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 298
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b8a1d10ec750c4aa1d77cf56c15058
+      internalID: 1891576142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 251
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1c43ba2de19994199dc4bbb9d2a84a
+      internalID: -38205481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 273
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168df8338029d734fae6cb2bae90b191
+      internalID: 91114076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 224
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392093d9e7df88143a8a78eaa1e91506
+      internalID: 1202522564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_10
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 241
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acb07cd7137f1a4b99b8c800896b9bc
+      internalID: 1317318160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 224
+        width: 19
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26b070397993774aafe64a6b7891cf7
+      internalID: 337297055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 192
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ac62481f51d2248be366a50a67151e
+      internalID: -1842946304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_13
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 160
+        width: 59
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf21b8523fceec449af5a77f077dec29
+      internalID: 136597633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_14
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 182
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ad7728d20b5f24a82acedde7c23d7c
+      internalID: -900637630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 183
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5046a6827512641a4b17b1aa0916a8
+      internalID: -195203666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 128
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dace030bcd863240ac4c428b1c826cc
+      internalID: -1693545956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25891784966f60d47864d24acc306c73
+      internalID: 494460204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 96
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faf6d6a1225b5c429404f47519d433e
+      internalID: 563796239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 55
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ae83b867bb6a14fa246f5b0fb85eab
+      internalID: 1566304040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 57
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85702aa1564c2741825672b54e64470
+      internalID: -1707517299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f9fe1b1de3e2744a8f2b532bd5a0c5
+      internalID: -1033922192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +600,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Double Slash With VFX (48x32)_16: -1693545956
+      Double Slash With VFX (48x32)_17: 494460204
+      Double Slash With VFX (48x32)_15: -195203666
+      Double Slash With VFX (48x32)_11: 337297055
+      Double Slash With VFX (48x32)_7: -38205481
+      Double Slash With VFX (48x32)_3: -1445374355
+      Double Slash With VFX (48x32)_8: 91114076
+      Double Slash With VFX (48x32)_12: -1842946304
+      Double Slash With VFX (48x32)_13: 136597633
+      Double Slash With VFX (48x32)_14: -900637630
+      Double Slash With VFX (48x32)_1: 1550804821
+      Double Slash With VFX (48x32)_20: -1707517299
+      Double Slash With VFX (48x32)_9: 1202522564
+      Double Slash With VFX (48x32)_6: 1891576142
+      Double Slash With VFX (48x32)_0: 1677835863
+      Double Slash With VFX (48x32)_5: 1525106842
+      Double Slash With VFX (48x32)_18: 563796239
+      Double Slash With VFX (48x32)_4: 962030884
+      Double Slash With VFX (48x32)_10: 1317318160
+      Double Slash With VFX (48x32)_2: -1671147504
+      Double Slash With VFX (48x32)_21: -1033922192
+      Double Slash With VFX (48x32)_19: 1566304040
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
