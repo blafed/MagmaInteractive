@@ -36,7 +36,7 @@ public class Character : Unit
 
 
     private Rigidbody2D rb;
-
+    new CapsuleCollider2D collider;
 
     int gravityVelocityIndex;
 
@@ -55,6 +55,7 @@ public class Character : Unit
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
+        collider = GetComponent<CapsuleCollider2D>();
         jump = GetComponentInChildren<CharacterJump>();
         shape = GetComponentInChildren<CharacterShape>();
         movement = GetComponentInChildren<CharacterMovement>();
@@ -90,7 +91,9 @@ public class Character : Unit
         {
             rb.velocity += x;
         }
-        isGrounded = Physics2D.Raycast(position, Vector2.down, groundThreshold, groundLayerMask);
+        isGrounded = Physics2D.Raycast(position, Vector2.down, groundThreshold, groundLayerMask)
+        | Physics2D.Raycast(position + Vector2.right * collider.size.x * .5f, Vector2.down, groundThreshold, groundLayerMask)
+        | Physics2D.Raycast(position - Vector2.right * collider.size.x * .5f, Vector2.down, groundThreshold, groundLayerMask);
 
 
         if (isGrounded)

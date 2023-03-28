@@ -949,7 +949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d0b3ccd9fd1b747ac49eda004d9d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 1
   allowVerticalMovement: 0
   movementInput: {x: 0, y: 0}
 --- !u!114 &2107819529445486844
@@ -966,7 +966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactivationTime: 0
   maxJumps: 2
-  jumpHeight: 1.5
+  jumpHeight: 1
   regroundThreshold: 0.3
   jumpEffects:
   - {fileID: 0}

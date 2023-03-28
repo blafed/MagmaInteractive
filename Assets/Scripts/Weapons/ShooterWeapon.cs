@@ -1,16 +1,15 @@
+using System;
 using System.Diagnostics.Contracts;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class ShooterWeapon : Weapon
 {
-    public float delay;
+
+    protected virtual bool overrideProjectileDamage => true;
+    public event Action<Projectile> onShoot;
     public GameObject projectilePrefab;
     [SerializeField] Transform spawner;
-
-    public override bool isAttacking => Time.time < reloadTimer + delay;
-
-
-
 
 
     public override void Attack()
@@ -30,7 +29,10 @@ public class ShooterWeapon : Weapon
         {
             projectile.owner = owner;
             projectile.weapon = this;
+            if (overrideProjectileDamage)
+                projectile.damage = damage;
         }
+        onShoot?.Invoke(projectile);
         return projectile;
     }
 }
