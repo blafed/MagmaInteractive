@@ -42,11 +42,12 @@ public class FlyingEye : Unit
     State state;
 
 
-    protected virtual void Awake()
+    protected override void Awake()
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+
     }
 
     private void Start()

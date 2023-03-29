@@ -7,16 +7,9 @@ public class Character : Unit
     public float gravityScale = 1;
     public LayerMask groundLayerMask;
     [SerializeField] float groundThreshold = .1f;
-    [Space]
-    public float jumpReactivation = 0;
-    public float attackReload = .5f;
-    public int maxJumpCount = 2;
 
-    public Vector2 position
-    {
-        get => transform.position;
-        set => transform.position = value;
-    }
+
+
     public Power power { get; private set; }
     public CharacterMovement movement { get; private set; }
     public CharacterJump jump { get; private set; }
@@ -91,9 +84,11 @@ public class Character : Unit
         {
             rb.velocity += x;
         }
+        Physics2D.queriesHitTriggers = false;
         isGrounded = Physics2D.Raycast(position, Vector2.down, groundThreshold, groundLayerMask)
         | Physics2D.Raycast(position + Vector2.right * collider.size.x * .5f, Vector2.down, groundThreshold, groundLayerMask)
         | Physics2D.Raycast(position - Vector2.right * collider.size.x * .5f, Vector2.down, groundThreshold, groundLayerMask);
+        Physics2D.queriesHitTriggers = true;
 
 
         if (isGrounded)
