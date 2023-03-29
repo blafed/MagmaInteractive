@@ -3,11 +3,16 @@ using UnityEngine;
 
 public class ShooterWeapon : Weapon
 {
+
+    [SerializeField] string _animationName = "Attack";
     bool _isAttacking = false;
+    public override string animationName => _animationName;
     public override bool isAttacking => _isAttacking;
+    public int projectileDeltaLAyer => 2;
 
     public GameObject projectilePrefab;
     public GameObject effectPrefab;
+    public bool parentEffectToThis = true;
 
     public Duration delay = new Duration(.3f);
     public Duration reload = new Duration(1);
@@ -23,13 +28,22 @@ public class ShooterWeapon : Weapon
     {
         _isAttacking = true;
         delay.Start();
+        reload.Start();
     }
 
     void SpawnProjectile()
     {
         var projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
         if (effectPrefab)
-            Instantiate(effectPrefab, transform.position, transform.rotation);
+        {
+            var eff = Instantiate(effectPrefab, transform.position, transform.rotation);
+            var originalScale = eff.transform.localScale;
+            if (parentEffectToThis)
+            {
+                eff.transform.SetParent(transform);
+                eff.transform.localScale = originalScale;
+            }
+        }
 
         var addForceAtStart = projectile.GetComponent<AddSpeedAtStart>();
         if (addForceAtStart)
@@ -51,6 +65,8 @@ public class ShooterWeapon : Weapon
         {
             limitLifetime.lifeTime.duration = projetileLifeTime;
         }
+
+        projectile.SetLayerRecrusive(gameObject.layer + projectileDeltaLAyer);
     }
 
 

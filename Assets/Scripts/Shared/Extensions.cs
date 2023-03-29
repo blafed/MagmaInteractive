@@ -18,4 +18,12 @@ public static class Extensions
         go.SetActive(false);
         go.SetActive(true);
     }
+    public static void SetLayerRecrusive(this GameObject gameObject, int layer)
+    {
+        gameObject.layer = layer;
+        foreach (Transform child in gameObject.transform)
+        {
+            child.gameObject.SetLayerRecrusive(layer);
+        }
+    }
 }

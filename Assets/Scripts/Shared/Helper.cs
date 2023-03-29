@@ -5,4 +5,6 @@ public static class Helper
     {
         return new Rect(center.x - size.x / 2, center.y - size.y / 2, size.x, size.y);
     }
+
+
 }
