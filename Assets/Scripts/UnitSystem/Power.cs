@@ -3,9 +3,7 @@ using UnityEngine;
 public class Power : MonoBehaviour
 {
     public Prop power = new Prop(100);
-
     public float regenRate = 200;
-
 
     private void FixedUpdate()
     {

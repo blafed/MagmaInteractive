@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class DestroyOnDie : MonoBehaviour
+public class DestroyOnKilled : MonoBehaviour
 {
     public GameObject effectPrefab;
-    Health health;
+
+
     private void Awake()
     {
-        health = GetComponent<Health>();
-        health.onKilled += OnDie;
+        GetComponentInParent<Health>().onKilled += OnKilled;
     }
 
-    void OnDie()
+    private void OnKilled()
     {
         if (effectPrefab != null)
             Instantiate(effectPrefab, transform.position, Quaternion.identity);

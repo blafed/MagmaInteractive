@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public bool isMoving => inputMovement.sqrMagnitude > 0.001f;
     public float speed = 4f;
     public Vector2 inputMovement;
     public bool allowVerticalMovement = false;

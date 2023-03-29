@@ -8,13 +8,18 @@ public class Grounding : MonoBehaviour
     public bool isGrounded { get; private set; }
     public float groundTime { get; private set; }
     public float airTime { get; private set; }
+    public bool isFalling => !isGrounded && rb.velocity.y < 0.5f;
 
     public event System.Action onGrounded;
 
 
     bool wasGrounded = false;
 
-
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        collider = GetComponent<Collider2D>();
+    }
     private void FixedUpdate()
     {
         wasGrounded = isGrounded;

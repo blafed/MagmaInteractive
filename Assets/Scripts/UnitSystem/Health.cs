@@ -4,11 +4,11 @@ public class Health : MonoBehaviour
 {
     public event System.Action<float> onHpChanged;
     public event System.Action<float> onTakeDamage;
-    public event System.Action onDied;
+    public event System.Action onKilled;
 
     public Prop hp = new Prop(100);
 
-    public bool isDead { get; private set; }
+    public bool isKilled { get; private set; }
 
     public void TakeDamage(float amount)
     {
@@ -20,16 +20,16 @@ public class Health : MonoBehaviour
         hp.current = newValue;
         onHpChanged?.Invoke(hp.current);
         if (newValue <= 0)
-            Die();
+            Kill();
     }
     public void AddHp(float amount)
     {
         ChangeHp(hp.current + amount);
     }
 
-    public void Die()
+    public void Kill()
     {
-        isDead = true;
-        onDied?.Invoke();
+        isKilled = true;
+        onKilled?.Invoke();
     }
 }
