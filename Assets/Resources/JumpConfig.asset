@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08789fb57c2c45a4f90d80063b11e83d, type: 3}
   m_Name: JumpConfig
   m_EditorClassIdentifier: 
-  flushInterval: 0.5
+  flushInterval: 1

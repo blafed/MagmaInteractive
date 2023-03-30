@@ -1,12 +1,11 @@
 using Codice.Client.Commands.TransformerRule;
+using Unity.Plastic.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class ShooterWeapon : Weapon
 {
 
-    [SerializeField] string _animationName = "Attack";
-    bool _isAttacking = false;
-    public override string animationName => _animationName;
+    bool _isAttacking;
     public override bool isAttacking => _isAttacking;
     public int projectileDeltaLAyer => 2;
 
@@ -16,17 +15,20 @@ public class ShooterWeapon : Weapon
 
     public Duration delay = new Duration(.3f);
     public Duration reload = new Duration(1);
+    public float postAttackTime = .5f;
     public float damage = 20;
     public float range = 10;
     public float projectileSpeed = 10;
     public float projetileLifeTime = .5f;
 
 
+    bool didAttack = false;
 
     public override bool CanAttack() => delay.isDone && reload.isDone;
     public override void Attack()
     {
         _isAttacking = true;
+        didAttack = false;
         delay.Start();
         reload.Start();
     }
@@ -63,7 +65,7 @@ public class ShooterWeapon : Weapon
         var limitLifetime = projectile.GetComponent<LimitLifetime>();
         if (limitLifetime)
         {
-            limitLifetime.lifeTime.duration = projetileLifeTime;
+            limitLifetime.lifeTime.value = projetileLifeTime;
         }
 
         projectile.SetLayerRecrusive(gameObject.layer + projectileDeltaLAyer);
@@ -74,9 +76,14 @@ public class ShooterWeapon : Weapon
     {
         if (isAttacking && delay.isDone)
         {
-            SpawnProjectile();
-            reload.Start();
-            _isAttacking = false;
+            if (!didAttack)
+            {
+                SpawnProjectile();
+                reload.Start();
+                didAttack = true;
+            }
+            if (delay.postElabsed > postAttackTime)
+                _isAttacking = false;
         }
     }
 

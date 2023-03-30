@@ -9,14 +9,17 @@ public class JumpAbility : MonoBehaviour
 
     public int maxJumps = 1;
     public float jumpForce = 10f;
+    public float secondJumpMultiplier = 1.2f;
+    public Duration secondJumpDelay = new Duration(0.3f);
 
 
     public bool isJumping => jumpsCounter > 0;
 
     float timeSinceJump;
+    bool didAddForce;
 
 
-    int jumpsCounter;
+    public int jumpsCounter { get; private set; }
 
     private void Awake()
     {
@@ -38,10 +41,10 @@ public class JumpAbility : MonoBehaviour
     }
     public void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        interval.Start();
+        didAddForce = false;
+        if (jumpsCounter > 0)
+            secondJumpDelay.Start();
         jumpsCounter++;
-        timeSinceJump = 0;
     }
 
     public void ResetJumps()
@@ -51,6 +54,13 @@ public class JumpAbility : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!didAddForce && (jumpsCounter == 1 || secondJumpDelay.isDone && jumpsCounter > 1))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce * (jumpsCounter == 1 ? 1 : secondJumpMultiplier));
+            didAddForce = true;
+            interval.Start();
+            timeSinceJump = 0;
+        }
         if (isJumping)
         {
             timeSinceJump += Time.fixedDeltaTime;

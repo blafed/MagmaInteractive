@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
-        rb.AddForce(transform.right * speed, ForceMode2D.Impulse);
+        rb.velocity = transform.right * speed;
     }
 
 

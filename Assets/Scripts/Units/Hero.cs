@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero : MonoBehaviour
+public class Hero : MonoBehaviour, IWeaponHolder
 {
     public static Hero current { get; private set; }
     public bool controllable = true;
@@ -12,16 +12,13 @@ public class Hero : MonoBehaviour
     public DashAbility dashAbility { get; private set; }
     public Power power { get; private set; }
 
-    public Weapon weapon;
 
-
-
-
-
+    public Weapon weapon { get; private set; }
+    [SerializeField] Weapon defaultWeapon;
+    [SerializeField] Weapon chargedWeapon;
+    [SerializeField] Weapon ultimateWeapon;
 
     public List<Key> keys = new List<Key>();
-
-
 
 
     private void Awake()
@@ -42,26 +39,54 @@ public class Hero : MonoBehaviour
 
     private void Update()
     {
+        var inp = InputManager.instance;
         if (controllable)
         {
-            if (InputManager.instance.jump)
+            if (dashAbility.isDashing)
+                return;
+            if (inp.jump)
             {
                 if (jumpAbility.CanJump())
                     jumpAbility.Jump();
             }
-            if (InputManager.instance.dash)
+            if (inp.dash)
             {
                 if (dashAbility.CanDash())
                     dashAbility.Dash();
             }
-            if (InputManager.instance.attack)
+
+            bool doAttack = inp.attack;
+
+            if (inp.chargedAttack)
+            {
+                if (chargedWeapon && chargedWeapon.CanAttack())
+                {
+                    weapon = chargedWeapon;
+                    doAttack = true;
+                }
+            }
+            else if (inp.ultimateAttack)
+            {
+                if (ultimateWeapon && ultimateWeapon.CanAttack())
+                {
+                    weapon = ultimateWeapon;
+                    doAttack = true;
+                }
+            }
+            else
+            {
+                weapon = defaultWeapon;
+            }
+
+            if (doAttack)
             {
                 if (weapon && weapon.CanAttack())
                 {
                     weapon.Attack();
                 }
             }
-            var inputMovement = InputManager.instance.movement;
+
+            var inputMovement = inp.movement;
             movement.inputMovement = inputMovement.normalized;
 
         }

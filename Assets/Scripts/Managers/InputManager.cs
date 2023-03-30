@@ -6,6 +6,9 @@ public class InputManager : Singleton<InputManager>
     public bool attack;
     public bool jump;
     public bool dash;
+    public bool chargedAttack;
+    public bool ultimateAttack;
+
 
     private void Update()
     {
@@ -13,5 +16,8 @@ public class InputManager : Singleton<InputManager>
         attack = Input.GetButton("Fire1");
         jump = Input.GetButtonDown("Jump");
         dash = Input.GetButtonDown("Dash");
+
+        chargedAttack = Input.GetButton("Fire2");
+        ultimateAttack = Input.GetButtonDown("Fire3");
     }
 }
