@@ -11,20 +11,8 @@ public class Enemy : MonoBehaviour
         Follow,
         Die
     }
-    [System.Serializable]
-    public class SearchProps
-    {
-        public float searchRadius = 10f;
-        public float searchInterval = 1f;
-    }
 
-    public class AttackProps
-    {
-        public float attackRadius = 1f;
-        public float attackInterval = 1f;
-    }
-
-    Health health;
+    public Health health { get; private set; }
     Shape shape;
     Weapon weapon;
     Health target;
@@ -41,5 +29,11 @@ public class Enemy : MonoBehaviour
     void FollowTarget() { }
     void Patrol() { }
     void Die() { }
+
+
+    protected virtual void Cycle()
+    {
+
+    }
 
 }

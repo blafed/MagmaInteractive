@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[System.Obsolete("Use Health instead")]
 public class SpellTarget : MonoBehaviour
 {
     public int priority;
@@ -10,14 +11,14 @@ public class SpellTarget : MonoBehaviour
     {
         health = GetComponentInParent<Health>();
     }
-    private void OnEnable()
-    {
-        GameLevel.current.spellTargets.Add(this);
-    }
-    private void OnDisable()
-    {
-        GameLevel.current.spellTargets.Remove(this);
-    }
+    // private void OnEnable()
+    // {
+    //     GameLevel.current.spellTargets.Add(this);
+    // }
+    // private void OnDisable()
+    // {
+    //     GameLevel.current.spellTargets.Remove(this);
+    // }
 
 
     void OnDrawGizmosSelected()

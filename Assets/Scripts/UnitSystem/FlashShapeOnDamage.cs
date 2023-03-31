@@ -5,7 +5,7 @@ public class FlashShapeOnDamage : MonoBehaviour
 {
     public Color targetColor = Color.red;
     Duration duration = new Duration(.05f);
-    SpriteRenderer renderer;
+    new SpriteRenderer renderer;
     Color originalColor;
     Mask mask;
     Health health;
