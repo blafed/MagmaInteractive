@@ -57,25 +57,29 @@ public class Hero : MonoBehaviour, IWeaponHolder
 
             bool doAttack = inp.attack;
 
-            if (inp.chargedAttack)
+            //assign weapon
+            if (!weapon || !weapon.isAttacking)
             {
-                if (chargedWeapon && chargedWeapon.CanAttack())
+                if (inp.chargedAttack)
                 {
-                    weapon = chargedWeapon;
-                    doAttack = true;
+                    if (chargedWeapon && chargedWeapon.CanAttack())
+                    {
+                        weapon = chargedWeapon;
+                        doAttack = true;
+                    }
                 }
-            }
-            else if (inp.ultimateAttack)
-            {
-                if (ultimateWeapon && ultimateWeapon.CanAttack())
+                else if (inp.ultimateAttack)
                 {
-                    weapon = ultimateWeapon;
-                    doAttack = true;
+                    if (ultimateWeapon && ultimateWeapon.CanAttack())
+                    {
+                        weapon = ultimateWeapon;
+                        doAttack = true;
+                    }
                 }
-            }
-            else
-            {
-                weapon = defaultWeapon;
+                else
+                {
+                    weapon = defaultWeapon;
+                }
             }
 
             if (doAttack)

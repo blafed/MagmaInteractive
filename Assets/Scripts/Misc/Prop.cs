@@ -12,10 +12,10 @@ public class Prop
     float _current = 1;
 
     public Prop() { }
-    public Prop(float max, float current = 1)
+    public Prop(float max, float ratio = 1)
     {
         this.max = max;
-        this.current = current;
+        this.ratio = ratio;
     }
 
     public float max

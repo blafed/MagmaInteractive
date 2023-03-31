@@ -33,9 +33,10 @@ public class ShooterWeapon : Weapon
         reload.Start();
     }
 
-    void SpawnProjectile()
+    protected virtual GameObject SpawnProjectile()
     {
         var projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
+        projectile.transform.right = Vector3.Scale(transform.right, transform.lossyScale);
         if (effectPrefab)
         {
             var eff = Instantiate(effectPrefab, transform.position, transform.rotation);
@@ -69,6 +70,8 @@ public class ShooterWeapon : Weapon
         }
 
         projectile.SetLayerRecrusive(gameObject.layer + projectileDeltaLAyer);
+
+        return projectile;
     }
 
 
@@ -85,6 +88,12 @@ public class ShooterWeapon : Weapon
             if (delay.postElabsed > postAttackTime)
                 _isAttacking = false;
         }
+    }
+
+    protected virtual void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 
 

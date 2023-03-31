@@ -26,4 +26,12 @@ public static class Extensions
             child.gameObject.SetLayerRecrusive(layer);
         }
     }
+
+    public static Vector2 ClampPoint(this Rect rect, Vector2 point)
+    {
+        var closestPoint = new Vector2(
+            Mathf.Clamp(point.x, rect.xMin, rect.xMax),
+            Mathf.Clamp(point.y, rect.yMin, rect.yMax));
+        return closestPoint;
+    }
 }
