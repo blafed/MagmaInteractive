@@ -11,4 +11,7 @@ public class Weapon : MonoBehaviour
     public virtual bool isAttacking => false;
     public virtual bool CanAttack() => true;
     public virtual void Attack() { }
+
+
+    public virtual void SetTarget(Health target) { }
 }

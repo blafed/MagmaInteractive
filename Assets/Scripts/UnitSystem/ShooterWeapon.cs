@@ -2,22 +2,18 @@ using Codice.Client.Commands.TransformerRule;
 using Unity.Plastic.Antlr3.Runtime.Tree;
 using UnityEngine;
 
-public class ShooterWeapon : Weapon
+public class ShooterWeapon : GenericWeapon
 {
 
     bool _isAttacking;
     public override bool isAttacking => _isAttacking;
-    public int projectileDeltaLAyer => 2;
+    public int projectileDeltaLayer => 2;
 
     public GameObject projectilePrefab;
     public GameObject effectPrefab;
     public bool parentEffectToThis = true;
 
-    public Duration delay = new Duration(.3f);
-    public Duration reload = new Duration(1);
     public float postAttackTime = .5f;
-    public float damage = 20;
-    public float range = 10;
     public float projectileSpeed = 10;
     public float projetileLifeTime = .5f;
 
@@ -69,7 +65,7 @@ public class ShooterWeapon : Weapon
             limitLifetime.lifeTime.value = projetileLifeTime;
         }
 
-        projectile.SetLayerRecrusive(gameObject.layer + projectileDeltaLAyer);
+        projectile.SetLayerRecrusive(gameObject.layer + projectileDeltaLayer);
 
         return projectile;
     }

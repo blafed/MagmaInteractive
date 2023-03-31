@@ -7,8 +7,19 @@ public class Health : MonoBehaviour
     public event System.Action onKilled;
 
     public Prop hp = new Prop(100);
+    public int priority;
 
     public bool isKilled { get; private set; }
+
+
+    private void OnEnable()
+    {
+        GameLevel.current.healths.Add(this);
+    }
+    private void OnDisable()
+    {
+        GameLevel.current.healths.Remove(this);
+    }
 
     public void TakeDamage(float amount)
     {

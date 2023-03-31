@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class HeroShape : MonoBehaviour
+public class HeroShape : Shape
 {
     public enum State
     {
@@ -18,45 +18,20 @@ public class HeroShape : MonoBehaviour
 
     }
 
-    [System.Serializable]
-    public class AnimationInfo
-    {
-        public string name;
-        public Vector2 pivot;
-        public float duration;
-        public int priority;
-    }
-
 
     public State state { get; private set; }
-
-    public Animator animator { get; private set; }
     public Hero hero { get; private set; }
-    public SpriteRenderer renderer { get; private set; }
-
-    public string animationState { get; set; }
-    public string customAnimation { get; set; }
-    public Duration playAnimationDuration = new Duration(1);
 
 
-    public List<AnimationInfo> animationInfos = new List<AnimationInfo>();
-
-    string oldAnimationState;
-    Vector2 originalPivot;
-
-    int animationPirority = 0;
-
-    private void Awake()
+    protected override void Awake()
     {
-        animator = GetComponent<Animator>();
+        base.Awake();
         hero = GetComponentInParent<Hero>();
-        renderer = GetComponent<SpriteRenderer>();
-        originalPivot = transform.localPosition;
     }
 
-    void Update()
+    protected override string GetNewAnimationState()
     {
-        oldAnimationState = this.animationState;
+        string animationState;
         if (hero.dashAbility.isDashing)
         {
             state = State.Dash;
@@ -87,7 +62,7 @@ public class HeroShape : MonoBehaviour
         {
             if (hero.jumpAbility.jumpsCounter > 1)
             {
-                this.animationState = "DoubleJump";
+                animationState = "DoubleJump";
             }
         }
 
@@ -97,44 +72,7 @@ public class HeroShape : MonoBehaviour
         {
             animationState = hero.weapon.animationName;
         }
-
-        var newPriority = 0;
-
-        foreach (var x in animationInfos)
-        {
-            if (x.name == animationState)
-                newPriority = x.priority;
-        }
-
-
-
-        if (playAnimationDuration.isDone || newPriority >= animationPirority)
-        {
-            if (!IsAnimationPlaying(animationState))
-            {
-                SetAnimation(animationState);
-
-                transform.localPosition = originalPivot;
-                animationPirority = 0;
-                foreach (var x in animationInfos)
-                {
-                    if (x.name == animationState)
-                    {
-                        transform.localPosition = originalPivot + x.pivot;
-                        playAnimationDuration.StartWithDuration(x.duration);
-                        animationPirority = x.priority;
-                    }
-                }
-            }
-        }
+        return animationState;
     }
 
-    public bool IsAnimationPlaying(string animationName)
-    {
-        return animator.GetCurrentAnimatorStateInfo(0).IsName(animationName);
-    }
-    public void SetAnimation(string animationName)
-    {
-        animator.Play(animationName);
-    }
 }
