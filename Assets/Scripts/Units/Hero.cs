@@ -39,6 +39,11 @@ public class Hero : MonoBehaviour, IWeaponHolder
 
     private void Update()
     {
+        if (health.isKilled)
+        {
+            grounding.rb.velocity = new Vector2();
+            return;
+        }
         var inp = InputManager.instance;
         if (controllable)
         {

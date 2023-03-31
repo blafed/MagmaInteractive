@@ -34,4 +34,9 @@ public static class Extensions
             Mathf.Clamp(point.y, rect.yMin, rect.yMax));
         return closestPoint;
     }
+
+    public static float Normalized(this float f)
+    {
+        return f / Mathf.Abs(f);
+    }
 }

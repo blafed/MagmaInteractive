@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class Grounding : MonoBehaviour
 {
-    Rigidbody2D rb;
+    public Rigidbody2D rb
+    {
+        get; private
+    set;
+    }
     new Collider2D collider;
 
     public bool isGrounded { get; private set; }

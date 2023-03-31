@@ -132,6 +132,9 @@ MonoBehaviour:
   damage: 10
   selfDamage: 0
   selfKill: 1
+  delay:
+    value: 0
+  multipleDamage: 0
 --- !u!114 &1778352009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,4 +149,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp:
     _max: 100
-    _current: 0.01
+    _current: 1
+  priority: 0

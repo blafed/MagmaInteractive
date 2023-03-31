@@ -7,9 +7,12 @@ public class TargetedWeapon : BasicWeapon
 
     public override bool isAttacking => target && base.isAttacking;
 
+
+    public bool targetInRange => target && Vector2.Distance(transform.position, target.transform.position) < range;
+
     public override bool CanAttack()
     {
-        return base.CanAttack() && target;
+        return base.CanAttack() && target && targetInRange;
     }
     protected override void ActualAttack()
     {
@@ -23,6 +26,16 @@ public class TargetedWeapon : BasicWeapon
     public override void SetTarget(Health target)
     {
         this.target = target;
+    }
+
+
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        if (target && !targetInRange)
+        {
+            target = null;
+        }
     }
 
 }

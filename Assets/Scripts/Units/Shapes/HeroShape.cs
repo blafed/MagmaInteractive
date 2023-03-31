@@ -13,8 +13,7 @@ public class HeroShape : Shape
         Dash,
         Jump,
         Fall,
-        Hit,
-        Stun,
+        Hurt,
 
     }
 
@@ -55,6 +54,11 @@ public class HeroShape : Shape
             state = State.Idle;
         }
 
+        if (hero.health.takeDamageTimer.elabsed < .5f)
+        {
+            state = State.Hurt;
+        }
+
 
         animationState = state.ToString();
 
@@ -68,9 +72,15 @@ public class HeroShape : Shape
 
 
 
+
+
         if (hero.weapon && hero.weapon.isAttacking && !string.IsNullOrEmpty(hero.weapon.animationName))
         {
             animationState = hero.weapon.animationName;
+        }
+        if (hero.health.isKilled)
+        {
+            animationState = "Die";
         }
         return animationState;
     }

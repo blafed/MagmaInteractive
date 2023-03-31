@@ -24,7 +24,11 @@ public class Sight : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range, targetMask);
         foreach (var collider in colliders)
         {
-            onTargetEnter?.Invoke(collider.gameObject);
+            if (!targets.Contains(collider.gameObject))
+            {
+                onTargetEnter?.Invoke(collider.gameObject);
+                targets.Add(collider.gameObject);
+            }
         }
     }
     void FixedUpdate()

@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -27365,8 +27365,8 @@ TextureImporter:
       background_1005: 531673804
       background_973: 659450644
       background_855: -1017780534
-      background_918: -1570891876
       background_1096: 459737713
+      background_918: -1570891876
       background_571: 43475412
       background_840: -145064352
       background_1062: -1268843840

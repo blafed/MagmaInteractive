@@ -12,6 +12,9 @@ public class Health : MonoBehaviour
     public bool isKilled { get; private set; }
 
 
+    public Duration takeDamageTimer { get; } = new Duration();
+
+
     private void OnEnable()
     {
         GameLevel.current.healths.Add(this);
@@ -25,6 +28,8 @@ public class Health : MonoBehaviour
     {
         onTakeDamage?.Invoke(amount);
         AddHp(-amount);
+
+        takeDamageTimer.StartWithDuration(1);
     }
     public void ChangeHp(float newValue)
     {
