@@ -1,5 +1,3 @@
-using Codice.Client.Common.WebApi;
-using log4net.Util;
 using UnityEngine;
 
 [RequireComponent(typeof(Health))]

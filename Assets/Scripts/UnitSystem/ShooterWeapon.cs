@@ -1,5 +1,3 @@
-using Codice.Client.Commands.TransformerRule;
-using Unity.Plastic.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class ShooterWeapon : GenericWeapon
