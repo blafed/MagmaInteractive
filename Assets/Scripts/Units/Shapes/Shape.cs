@@ -30,17 +30,23 @@ public class Shape : MonoBehaviour
     Vector2 originalPivot;
 
     int animationPirority = 0;
+    SpriteMask mask;
 
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
         renderer = GetComponent<SpriteRenderer>();
         originalPivot = transform.localPosition;
+        mask = GetComponent<SpriteMask>();
     }
 
 
     void Update()
     {
+        if (mask != null)
+        {
+            mask.sprite = renderer.sprite;
+        }
         oldAnimationState = this.animationState;
         var strNewAnimation = GetNewAnimationState();
         if (!string.IsNullOrEmpty(strNewAnimation))

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[System.Obsolete("Use DestroyOnKilled instead")]
 public class DestroyOnDie : MonoBehaviour
 {
     public GameObject effectPrefab;

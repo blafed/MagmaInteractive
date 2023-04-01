@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public Key key;
+    // public Key key;
     public bool isOpened { get; private set; }
     Animator animator;
     new Collider2D collider;
@@ -14,10 +14,6 @@ public class Door : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         collider = GetComponentInChildren<Collider2D>();
 
-        if (!key)
-        {
-            Debug.LogError("Door has no key assigned", gameObject);
-        }
     }
     public void Open()
     {
@@ -34,9 +30,10 @@ public class Door : MonoBehaviour
         var hero = other.GetComponentInParent<Hero>();
         if (hero)
         {
-            if (hero.keys.Contains(key))
+            if (hero.keys.Count > 0)
             {
                 Open();
+                hero.keys.RemoveAt(0);
             }
         }
     }

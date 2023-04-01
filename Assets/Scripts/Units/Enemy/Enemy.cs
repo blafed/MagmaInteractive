@@ -163,10 +163,7 @@ public class Enemy : MonoBehaviour
     {
         if (!initialAttackDelay.isDone)
             return;
-        if (weapon is TargetedWeapon targetedWeapon)
-        {
-            targetedWeapon.SetTarget(target);
-        }
+        weapon.SetTarget(target);
         if (target)
             if (weapon.CanAttack())
                 weapon.Attack();

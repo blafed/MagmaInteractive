@@ -19,6 +19,10 @@ public class Patrol : MonoBehaviour
     }
     Vector2 startPatrolPoint;
 
+    private void Start()
+    {
+        rest.value *= Random.Range(.7f, 1.3f);
+    }
 
     private void OnEnable()
     {

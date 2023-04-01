@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
 
     public Prop hp = new Prop(100);
     public int priority;
+    public bool invincible;
 
     public bool isKilled { get; private set; }
     public object damageSender { get; private set; }
@@ -27,6 +28,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float amount, object damageSender)
     {
+        if (invincible) return;
         this.damageSender = damageSender;
         onTakeDamage?.Invoke(amount);
         AddHp(-amount);

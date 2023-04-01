@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class SpellWeapon : ShooterWeapon
 {
@@ -34,6 +35,10 @@ public class SpellWeapon : ShooterWeapon
 
         foreach (var x in GameLevel.current.healths)
         {
+            if (!x)
+                continue;
+            if (x.invincible)
+                continue;
             if ((targetLayer & (1 << x.gameObject.layer)) == 0)
                 continue;
             //skip dead

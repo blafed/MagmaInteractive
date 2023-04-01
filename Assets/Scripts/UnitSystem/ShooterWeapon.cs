@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShooterWeapon : GenericWeapon
 {
+    Transform customTrackingTarget { get; set; }
 
     bool _isAttacking;
     public override bool isAttacking => _isAttacking;
@@ -66,10 +67,21 @@ public class ShooterWeapon : GenericWeapon
         {
             limitLifetime.lifeTime.value = projetileLifeTime;
         }
+        var tracking = projectile.GetComponent<Tracking>();
+        if (tracking)
+        {
+            tracking.target = customTrackingTarget;
+        }
 
         projectile.SetLayerRecrusive(gameObject.layer + projectileDeltaLayer);
 
         return projectile;
+    }
+
+    public override void SetTarget(Health target)
+    {
+        base.SetTarget(target);
+        customTrackingTarget = target.transform;
     }
 
 
