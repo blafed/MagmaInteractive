@@ -12,7 +12,7 @@ public class ComboAttack : Weapon
     public Weapon currentWeapon => weapons.Length > 0 && weaponIndex >= 0 ? weapons[weaponIndex] : null;
     public int weaponIndex { get; private set; } = -1;
 
-    public override bool CanAttack() => reload.isDone;
+    public override bool CanAttack() => base.CanAttack() && reload.isDone;
     public override void Attack()
     {
         weaponIndex = (weaponIndex + 1) % weapons.Length;

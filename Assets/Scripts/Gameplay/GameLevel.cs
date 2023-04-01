@@ -6,6 +6,10 @@ public class GameLevel : MonoBehaviour
 {
     public static GameLevel current { get; private set; }
 
+    public event System.Action onGameOver;
+
+    public GameOverResult gameOverResult { get; private set; }
+
     public List<Health> healths = new List<Health>();
     public List<Door> doors = new List<Door>();
     public List<Key> keys = new List<Key>();
@@ -14,4 +18,26 @@ public class GameLevel : MonoBehaviour
     {
         current = this;
     }
+
+
+
+    public void Win()
+    {
+        gameOverResult = GameOverResult.Win;
+        onGameOver?.Invoke();
+    }
+    public void Lose()
+    {
+        gameOverResult = GameOverResult.Lose;
+        onGameOver?.Invoke();
+    }
+}
+
+
+public enum GameOverResult
+{
+    Unset,
+    Win,
+    Lose,
+
 }

@@ -7,10 +7,10 @@ public class Hero : MonoBehaviour, IWeaponHolder
     public bool controllable = true;
     public Grounding grounding { get; private set; }
     public Health health { get; private set; }
+    public Mana mana { get; private set; }
     public JumpAbility jumpAbility { get; private set; }
     public Movement movement { get; private set; }
     public DashAbility dashAbility { get; private set; }
-    public Power power { get; private set; }
 
 
     public Weapon weapon { get; private set; }
@@ -31,8 +31,16 @@ public class Hero : MonoBehaviour, IWeaponHolder
         jumpAbility = GetComponent<JumpAbility>();
         movement = GetComponent<Movement>();
         dashAbility = GetComponent<DashAbility>();
-        power = GetComponent<Power>();
         grounding = GetComponent<Grounding>();
+        mana = GetComponent<Mana>();
+
+
+        health.onKilled += () =>
+        {
+            grounding.rb.velocity = new Vector2();
+            movement.inputMovement = new Vector2();
+        };
+
 
     }
 
@@ -41,7 +49,7 @@ public class Hero : MonoBehaviour, IWeaponHolder
     {
         if (health.isKilled)
         {
-            grounding.rb.velocity = new Vector2();
+
             return;
         }
         var inp = InputManager.instance;

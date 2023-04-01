@@ -19,7 +19,7 @@ public class TargetedWeapon : BasicWeapon
         base.ActualAttack();
         if (target)
         {
-            target.TakeDamage(damage);
+            target.TakeDamage(damage, ownerHealth);
         }
     }
 

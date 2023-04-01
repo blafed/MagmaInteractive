@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class JumpAbility : MonoBehaviour
 {
+    public int secondJumpManaCost = 10;
     Grounding grounding;
     public Duration interval = new Duration(0.1f);
     Rigidbody2D rb;
@@ -19,12 +20,14 @@ public class JumpAbility : MonoBehaviour
 
     float timeSinceJump;
     bool didAddForce;
+    Mana mana;
 
 
     public int jumpsCounter { get; private set; }
 
     private void Awake()
     {
+        mana = GetComponent<Mana>();
         rb = GetComponent<Rigidbody2D>();
         grounding = GetComponent<Grounding>();
 
@@ -35,6 +38,8 @@ public class JumpAbility : MonoBehaviour
     }
     public bool CanJump()
     {
+        if (mana && !mana.HasAmount(secondJumpManaCost) && jumpsCounter > 0)
+            return false;
         if (grounding && !grounding.isGrounded && jumpsCounter == 0)
         {
             return false;
@@ -45,7 +50,11 @@ public class JumpAbility : MonoBehaviour
     {
         didAddForce = false;
         if (jumpsCounter > 0)
+        {
             secondJumpDelay.Start();
+            if (mana)
+                mana.UseMana(secondJumpManaCost);
+        }
         jumpsCounter++;
     }
 

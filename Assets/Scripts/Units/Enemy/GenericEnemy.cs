@@ -8,6 +8,8 @@ public class GenericEnemy : Enemy
         base.OnTargetExist();
         if (canFollow)
             SetFollowTarget(true);
+        initialAttackDelay.Start();
+
     }
 
     protected override void OnTargetLost()
@@ -21,6 +23,19 @@ public class GenericEnemy : Enemy
         if (canFollow)
         {
             SetFollowTarget(false);
+        }
+    }
+
+    protected override void OnTakeDamage(float amount)
+    {
+        base.OnTakeDamage(amount);
+
+        if (health.damageSender != null)
+        {
+            if (health.damageSender is Health sender)
+            {
+                SelectTarget(sender);
+            }
         }
     }
 

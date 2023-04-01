@@ -30,7 +30,7 @@ public class SpellWeapon : ShooterWeapon
     Health FindTarget()
     {
         Health current = null;
-        var dst = 0;
+        var dst = 0f;
 
         foreach (var x in GameLevel.current.healths)
         {
@@ -45,8 +45,16 @@ public class SpellWeapon : ShooterWeapon
             if (xDst > range.Squared())
                 continue;
 
+            var diff = new Vector2(x.transform.position.x - transform.position.x, x.transform.position.y - transform.position.y);
+            diff.y *= 2;
+            //effective distance
+            var eDst = diff.sqrMagnitude;
+
             if (!current || x.priority > current.priority || x.priority == current.priority && xDst < dst)
+            {
                 current = x;
+                dst = eDst;
+            }
         }
         return current;
     }

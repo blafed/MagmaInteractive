@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     public int priority;
 
     public bool isKilled { get; private set; }
+    public object damageSender { get; private set; }
 
 
     public Duration takeDamageTimer { get; } = new Duration();
@@ -24,8 +25,9 @@ public class Health : MonoBehaviour
         GameLevel.current.healths.Remove(this);
     }
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(float amount, object damageSender)
     {
+        this.damageSender = damageSender;
         onTakeDamage?.Invoke(amount);
         AddHp(-amount);
 

@@ -8,36 +8,38 @@ public class DashAbility : MonoBehaviour
     public Duration cooldown = new Duration(2);
     public Duration delay = new Duration(.3f);
     public float stopAfter = 1f;
-    public float powerCost = 40;
+    public int manaCost = 25;
     public bool flipCollider;
 
 
 
     Movement movement;
-    Power power;
     bool didDash = false;
 
 
     Rigidbody2D rb;
+    Mana mana;
 
     private void Awake()
     {
         movement = GetComponent<Movement>();
-        power = GetComponentInParent<Power>();
         rb = GetComponent<Rigidbody2D>();
+        mana = GetComponent<Mana>();
     }
 
     public bool isDashing => !duration.isDone;
 
     public bool CanDash()
     {
-        return duration.isDone && cooldown.isDone && (!power || power.power.current >= powerCost);
+        return duration.isDone && cooldown.isDone && (!mana || mana.HasAmount(manaCost));
     }
     public void Dash()
     {
         delay.Start();
         duration.Start();
         didDash = false;
+        if (mana)
+            mana.UseMana(manaCost);
     }
 
     private void FixedUpdate()

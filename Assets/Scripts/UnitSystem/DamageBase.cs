@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class DamageBase : MonoBehaviour
 {
+    public Health damageSender
+    {
+        get => _damageSender ? _damageSender : health;
+        set => _damageSender = value;
+    }
     public float damage = 10;
     public float selfDamage;
     public bool selfKill;
@@ -10,6 +15,7 @@ public class DamageBase : MonoBehaviour
     public bool multipleDamage = false;
 
     Health health;
+    Health _damageSender;
 
 
     List<Health> damaged = new List<Health>();
@@ -24,12 +30,12 @@ public class DamageBase : MonoBehaviour
 
     void ApplyDamage(Health otherHealth)
     {
-        otherHealth.TakeDamage(damage);
+        otherHealth.TakeDamage(damage, damageSender);
         if (selfKill)
             health.Kill();
         else
         if (selfDamage != 0)
-            health.TakeDamage(selfDamage);
+            health.TakeDamage(selfDamage, damageSender);
     }
 
 
@@ -63,6 +69,11 @@ public class DamageBase : MonoBehaviour
 
             ApplyDamage(otherHealth);
 
+        }
+        else
+        {
+            if (selfKill)
+                health.Kill();
         }
     }
 }

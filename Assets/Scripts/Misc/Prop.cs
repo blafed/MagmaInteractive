@@ -9,7 +9,7 @@ public class Prop
     float _max = 100;
     [SerializeField]
     [Range(0, 1)]
-    float _current = 1;
+    float _currentRatio = 1;
 
     public Prop() { }
     public Prop(float max, float ratio = 1)
@@ -26,13 +26,13 @@ public class Prop
 
     public float ratio
     {
-        get => _current;
-        set => _current = Mathf.Clamp01(value);
+        get => _currentRatio;
+        set => _currentRatio = Mathf.Clamp01(value);
     }
     public float current
     {
-        get => _current * max;
-        set => _current = Mathf.Clamp01(value / max);
+        get => _currentRatio * max;
+        set => _currentRatio = Mathf.Clamp01(value / max);
     }
 
 }

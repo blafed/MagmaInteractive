@@ -1,9 +1,11 @@
 using Codice.Client.Common.WebApi;
+using log4net.Util;
 using UnityEngine;
 
 [RequireComponent(typeof(Health))]
 public class Enemy : MonoBehaviour
 {
+    public Duration initialAttackDelay = new Duration(1);
     public Health health { get; private set; }
     protected Shape shape;
     protected Weapon weapon;
@@ -36,6 +38,13 @@ public class Enemy : MonoBehaviour
         patrol = GetComponent<Patrol>();
         rb = GetComponent<Rigidbody2D>();
 
+        health.onTakeDamage += (amount) =>
+        {
+            if (health.isKilled)
+                return;
+            OnTakeDamage(amount);
+        };
+
         health.onKilled += () =>
         {
             if (rb)
@@ -50,6 +59,8 @@ public class Enemy : MonoBehaviour
                 follow.enabled = false;
             if (sight)
                 sight.enabled = false;
+            if (weapon)
+                weapon.enabled = false;
             Destroy(gameObject, 3);
         };
 
@@ -60,8 +71,7 @@ public class Enemy : MonoBehaviour
             var targetHealth = targetGo.GetComponentInParent<Health>();
             if (targetHealth)
             {
-                target = targetHealth;
-                OnTargetExist();
+                SelectTarget(targetHealth);
             }
 
         };
@@ -78,6 +88,22 @@ public class Enemy : MonoBehaviour
         };
     }
 
+
+    protected void SelectTarget(Health target)
+    {
+        if (!target)
+        {
+            Debug.LogError("Cannot select null target");
+            return;
+        }
+        this.target = target;
+        OnTargetExist();
+    }
+
+    protected virtual void OnTakeDamage(float amount)
+    {
+
+    }
     protected virtual void OnTargetExist() { }
     protected virtual void WhileTargetExist() { }
     protected virtual void OnTargetLost() { }
@@ -87,6 +113,8 @@ public class Enemy : MonoBehaviour
             return "Die";
         if (weapon && weapon.isAttacking)
             return "Attack";
+        if (health && !health.takeDamageTimer.isDone)
+            return "Hurt";
         if (follow && follow.enabled || patrol && patrol.enabled && patrol.rest.isDone)
             return "Run";
 
@@ -114,7 +142,8 @@ public class Enemy : MonoBehaviour
     {
         patrol.enabled = enabled;
         if (enabled)
-            follow.enabled = false;
+            if (follow)
+                follow.enabled = false;
     }
     protected void SetSearching(bool enabled)
     {
@@ -127,10 +156,13 @@ public class Enemy : MonoBehaviour
             follow.target = target.transform;
         follow.enabled = enabled;
         if (enabled)
-            patrol.enabled = false;
+            if (patrol)
+                patrol.enabled = false;
     }
     protected void WeaponTryAttack()
     {
+        if (!initialAttackDelay.isDone)
+            return;
         if (weapon is TargetedWeapon targetedWeapon)
         {
             targetedWeapon.SetTarget(target);

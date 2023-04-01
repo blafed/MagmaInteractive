@@ -12,9 +12,10 @@ public class BasicWeapon : GenericWeapon
 
     bool didAttack = false;
 
-    public override bool CanAttack() => delay.isDone && reload.isDone;
+    public override bool CanAttack() => base.CanAttack() && delay.isDone && reload.isDone;
     public override void Attack()
     {
+        base.Attack();
         _isAttacking = true;
         didAttack = false;
         delay.Start();

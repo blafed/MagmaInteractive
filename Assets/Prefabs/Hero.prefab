@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationName: ChargedAttack
+  manaCost: 15
   damage: 10
   range: 5.8
   delay:
@@ -102,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationName: UltimateAttack
+  manaCost: 40
   damage: 40
   range: 5.5
   delay:
@@ -135,6 +137,7 @@ GameObject:
   - component: {fileID: 5589301687857657397}
   - component: {fileID: 5589301687857657398}
   - component: {fileID: 235773238}
+  - component: {fileID: 626890482}
   m_Layer: 9
   m_Name: Hero
   m_TagString: Untagged
@@ -230,6 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca9bc166d51b014bb2814191d8ed5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  secondJumpManaCost: 5
   interval:
     value: 0.1
   maxJumps: 2
@@ -285,7 +289,7 @@ MonoBehaviour:
   delay:
     value: 0.5
   stopAfter: 1
-  powerCost: 40
+  manaCost: 25
   flipCollider: 0
 --- !u!114 &5589301687857657398
 MonoBehaviour:
@@ -301,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   power:
     _max: 100
-    _current: 1
+    _currentRatio: 1
   regenRate: 200
 --- !u!114 &235773238
 MonoBehaviour:
@@ -317,8 +321,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp:
     _max: 100
-    _current: 1
+    _currentRatio: 1
   priority: 0
+--- !u!114 &626890482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5589301687857657389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a866317e418a74a842ea579bb9da31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mana:
+    _max: 100
+    _currentRatio: 1
+  regenRate: 100
 --- !u!1 &5589301687883086554
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationName: Attack1
+  manaCost: 0
   damage: 10
   range: 0.5
   delay:
@@ -609,6 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationName: Attack3
+  manaCost: 0
   damage: 20
   range: 0.5
   delay:
@@ -666,6 +688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationName: Attack2
+  manaCost: 0
   damage: 15
   range: 0.5
   delay:

@@ -3,6 +3,8 @@ using UnityEngine.Serialization;
 
 public class Weapon : MonoBehaviour
 {
+    Health _health;
+    public Health ownerHealth => _health ? _health : _health = GetComponentInParent<Health>();
 
     [FormerlySerializedAs("animationName")]
     [SerializeField]

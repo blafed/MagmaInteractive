@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 2140883001774765731}
   - component: {fileID: 2140883001774765728}
   - component: {fileID: 2140883001774765742}
-  - component: {fileID: 2140883001774765729}
   - component: {fileID: 2140883001774765743}
   - component: {fileID: 2140883001774765741}
   - component: {fileID: 2140883001774765738}
@@ -201,24 +200,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2140883001774765729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140883001774765730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9962a0c6112e3746b7a58cbddb0cdd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
-  selfDamage: 0
-  selfKill: 0
-  delay:
-    value: 0
-  multipleDamage: 0
 --- !u!114 &2140883001774765743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp:
-    _max: 30
+    _max: 24
     _current: 1
   priority: 0
 --- !u!114 &2140883001774765741
@@ -285,6 +266,8 @@ MonoBehaviour:
   distance: 4
   rest:
     value: 2
+  maxPatrolDuration:
+    value: 4
 --- !u!114 &2140883001774765736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad758be943ca14478cee22f2798e628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialAttackDelay:
+    value: 1
 --- !u!1 &2140883002372735437
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +332,7 @@ MonoBehaviour:
   delay:
     value: 0.3
   reload:
-    value: 1
+    value: 3
   effectPrefab: {fileID: 0}
   parentEffectToThis: 1
   postAttackTime: 0.5
