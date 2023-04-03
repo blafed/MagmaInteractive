@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -3839,12 +3839,12 @@ TextureImporter:
       BloodTempleTileset_57: -1378176501
       BloodTempleTileset_15: -2133264159
       BloodTempleTileset_64: -754161314
-      BloodTempleTileset_78: 121235807
+      BloodTempleTileset_174: 443692137
       BloodTempleTileset_131: -840126941
+      BloodTempleTileset_78: 121235807
       BloodTempleTileset_3: 1687856545
       BloodTempleTileset_56: 541872505
       BloodTempleTileset_169: 573119440
-      BloodTempleTileset_174: 443692137
       BloodTempleTileset_75: -540969990
       BloodTempleTileset_59: -1236215388
       BloodTempleTileset_48: -1161795848
@@ -3900,17 +3900,17 @@ TextureImporter:
       BloodTempleTileset_160: 458103033
       BloodTempleTileset_18: -497032288
       BloodTempleTileset_49: -1592991096
-      BloodTempleTileset_158: -1854357221
       BloodTempleTileset_71: -1973346591
+      BloodTempleTileset_158: -1854357221
       BloodTempleTileset_165: -1704070837
       BloodTempleTileset_116: 1589632159
       BloodTempleTileset_63: -1779989542
       BloodTempleTileset_140: 80105233
       BloodTempleTileset_29: 141410120
       BloodTempleTileset_23: 252595592
-      BloodTempleTileset_32: -569601555
       BloodTempleTileset_38: 823421704
       BloodTempleTileset_68: -174038017
+      BloodTempleTileset_32: -569601555
       BloodTempleTileset_33: 1315864773
       BloodTempleTileset_80: 897100389
       BloodTempleTileset_93: 1957372845
@@ -3951,11 +3951,11 @@ TextureImporter:
       BloodTempleTileset_66: 452351543
       BloodTempleTileset_121: -1306640672
       BloodTempleTileset_55: 1867070465
-      BloodTempleTileset_42: 393429979
-      BloodTempleTileset_35: 614251628
       BloodTempleTileset_100: -2131243257
-      BloodTempleTileset_127: 1984336873
+      BloodTempleTileset_35: 614251628
+      BloodTempleTileset_42: 393429979
       BloodTempleTileset_108: -1466589886
+      BloodTempleTileset_127: 1984336873
       BloodTempleTileset_67: -655376090
       BloodTempleTileset_136: -777559378
       BloodTempleTileset_58: 296220865

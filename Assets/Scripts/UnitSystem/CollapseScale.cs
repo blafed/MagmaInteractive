@@ -7,14 +7,21 @@ public class CollapseScale : MonoBehaviour
     Rigidbody2D rb;
 
 
+    AudioSource audioSource;
+
+
     private void Awake()
     {
         collider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     IEnumerator Start()
     {
+        if (audioSource)
+            audioSource.Play();
         collider.isTrigger = false;
         rb.gravityScale = 1;
         rb.bodyType = RigidbodyType2D.Dynamic;

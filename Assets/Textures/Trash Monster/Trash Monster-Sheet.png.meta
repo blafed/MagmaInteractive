@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -853,10 +853,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Trash Monster-Sheet_49: 599886127
       Trash Monster-death 9: -2104817257
       Trash Monster-Sheet_16: 1183225027
       Trash Monster-death 0: 733207829
+      Trash Monster-death 2: -119127349
       Trash Monster-run 0: 1280299464
       Trash Monster-attack 9: -602532483
       Trash Monster-Sheet_33: 1954117331
@@ -893,8 +893,8 @@ TextureImporter:
       Trash Monster-run 2: -1219743766
       Trash Monster-death 8: -1494620058
       Trash Monster-attack 2: 391924111
-      Trash Monster-Sheet_26: -2136324070
       Trash Monster-run 5: -545126488
+      Trash Monster-Sheet_26: -2136324070
       Trash Monster-idle 3: -1798170365
       Trash Monster-idle 4: 192780408
       Trash Monster-run 1: -776335369
@@ -905,8 +905,8 @@ TextureImporter:
       Trash Monster-idle 0: -1226420151
       Trash Monster-Sheet_38: -1388910310
       Trash Monster-idle 2: 301816620
-      Trash Monster-death 2: -119127349
       Trash Monster-run 4: -1740782748
+      Trash Monster-Sheet_49: 599886127
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

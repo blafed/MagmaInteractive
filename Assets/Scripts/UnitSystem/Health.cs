@@ -9,6 +9,8 @@ public class Health : MonoBehaviour
     public Prop hp = new Prop(100);
     public int priority;
     public bool invincible;
+    public AudioSource hitAudioSource;
+    public AudioSource killAudioSource;
 
     public bool isKilled { get; private set; }
     public object damageSender { get; private set; }
@@ -34,6 +36,9 @@ public class Health : MonoBehaviour
         AddHp(-amount);
 
         takeDamageTimer.StartWithDuration(1);
+
+        if (hitAudioSource != null)
+            hitAudioSource.Play();
     }
     public void ChangeHp(float newValue)
     {
@@ -51,5 +56,8 @@ public class Health : MonoBehaviour
     {
         isKilled = true;
         onKilled?.Invoke();
+
+        if (killAudioSource != null)
+            killAudioSource.Play();
     }
 }

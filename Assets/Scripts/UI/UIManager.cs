@@ -6,7 +6,18 @@ public class UIManager : Singleton<UIManager>
     public ProgressBar manaBar;
     public DialogText dialogText;
 
+    [SerializeField] GameOverPanel gameOverPanel;
 
+
+    void Start()
+    {
+        Hero.current.health.onKilled += () => OnHeroKilled();
+    }
+
+    void OnHeroKilled()
+    {
+        gameOverPanel.Show();
+    }
     void Update()
     {
         var hero = Hero.current;

@@ -7,12 +7,14 @@ public class Door : MonoBehaviour
     public bool isOpened { get; private set; }
     Animator animator;
     new Collider2D collider;
-
+    AudioSource audioSource;
     private void Awake()
     {
         GameLevel.current.doors.Add(this);
         animator = GetComponentInChildren<Animator>();
         collider = GetComponentInChildren<Collider2D>();
+
+        audioSource = GetComponent<AudioSource>();
 
     }
     public void Open()
@@ -20,6 +22,9 @@ public class Door : MonoBehaviour
         isOpened = true;
         animator.Play("Open");
         collider.enabled = false;
+
+        if (audioSource != null)
+            audioSource.Play();
     }
 
 

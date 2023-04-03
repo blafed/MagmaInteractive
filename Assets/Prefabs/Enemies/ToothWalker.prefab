@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationName: Attack
+  manaCost: 0
   damage: 15
   range: 1.2
   delay:
@@ -270,6 +271,7 @@ MonoBehaviour:
     _max: 35
     _currentRatio: 1
   priority: 0
+  invincible: 0
 --- !u!114 &389541853190328282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,4 +337,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialAttackDelay:
-    value: 1
+    value: 0.5

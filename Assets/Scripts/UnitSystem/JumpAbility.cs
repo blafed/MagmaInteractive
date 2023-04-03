@@ -12,6 +12,7 @@ public class JumpAbility : MonoBehaviour
     public float secondJumpMultiplier = 1.2f;
     public Duration secondJumpDelay = new Duration(0.3f);
     public GameObject[] jumpEffects;
+    public float jumpEffectDelay = 0.2f;
 
 
 
@@ -20,7 +21,7 @@ public class JumpAbility : MonoBehaviour
     float timeSinceJump;
     bool didAddForce;
     Mana mana;
-
+    Duration createEffectDelay = new Duration(.2f);
 
     public int jumpsCounter { get; private set; }
 
@@ -64,13 +65,16 @@ public class JumpAbility : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (createEffectDelay.isDoneTrigger)
+        {
+            Instantiate(jumpEffects[jumpsCounter - 1], transform.position, Quaternion.identity);
+        }
         if (!didAddForce && (jumpsCounter == 1 || secondJumpDelay.isDone && jumpsCounter > 1))
         {
-            //create jump effect by jumpsCounter
             if (jumpEffects.Length > (jumpsCounter - 1) && jumpEffects[jumpsCounter - 1])
-            {
-                Instantiate(jumpEffects[jumpsCounter - 1], transform.position, Quaternion.identity);
-            }
+                createEffectDelay.StartWithDuration(jumpEffectDelay);
+            //create jump effect by jumpsCounter
+
             rb.velocity = new Vector2(rb.velocity.x, jumpForce * (jumpsCounter == 1 ? 1 : secondJumpMultiplier));
             didAddForce = true;
             interval.Start();

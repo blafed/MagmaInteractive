@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -2384,31 +2384,31 @@ TextureImporter:
       layer 6 - tileset layer- should build your own_62: -1985832972
       layer 6 - tileset layer- should build your own_9: 910142512
       layer 6 - tileset layer- should build your own_24: 1692040570
-      layer 6 - tileset layer- should build your own_55: 1696181288
-      layer 6 - tileset layer- should build your own_65: 168224274
       layer 6 - tileset layer- should build your own_85: -1714022521
+      layer 6 - tileset layer- should build your own_55: 1696181288
+      layer 6 - tileset layer- should build your own_100: -1570135656
       layer 6 - tileset layer- should build your own_86: -626897575
       layer 6 - tileset layer- should build your own_39: 1530222308
       layer 6 - tileset layer- should build your own_28: -661762012
-      layer 6 - tileset layer- should build your own_100: -1570135656
+      layer 6 - tileset layer- should build your own_65: 168224274
       layer 6 - tileset layer- should build your own_5: 997652483
       layer 6 - tileset layer- should build your own_42: 1981178125
       layer 6 - tileset layer- should build your own_95: -207353972
       layer 6 - tileset layer- should build your own_73: 1291831891
       layer 6 - tileset layer- should build your own_97: 332397769
       layer 6 - tileset layer- should build your own_31: 265637889
-      layer 6 - tileset layer- should build your own_36: 1942772625
-      layer 6 - tileset layer- should build your own_91: 1842552509
       layer 6 - tileset layer- should build your own_48: 21481699
+      layer 6 - tileset layer- should build your own_91: 1842552509
       layer 6 - tileset layer- should build your own_15: -314989114
       layer 6 - tileset layer- should build your own_50: -1710640103
       layer 6 - tileset layer- should build your own_11: 1009281599
       layer 6 - tileset layer- should build your own_54: 1124888829
       layer 6 - tileset layer- should build your own_46: 715613835
       layer 6 - tileset layer- should build your own_81: -645548932
+      layer 6 - tileset layer- should build your own_36: 1942772625
       layer 6 - tileset layer- should build your own_0: 1433497577
-      layer 6 - tileset layer- should build your own_84: -171768378
       layer 6 - tileset layer- should build your own_98: 673141758
+      layer 6 - tileset layer- should build your own_84: -171768378
       layer 6 - tileset layer- should build your own_99: 161031304
       layer 6 - tileset layer- should build your own_68: -674513577
       layer 6 - tileset layer- should build your own_76: -2074201451

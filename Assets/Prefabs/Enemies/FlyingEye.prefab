@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialAttackDelay:
-    value: 1
+    value: 0.5
 --- !u!1 &4594930462774885711
 GameObject:
   m_ObjectHideFlags: 0

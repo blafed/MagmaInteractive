@@ -154,6 +154,7 @@ MonoBehaviour:
     _max: 42
     _currentRatio: 1
   priority: 0
+  invincible: 0
 --- !u!114 &5395767515426946531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialAttackDelay:
-    value: 1
+    value: 0.5
 --- !u!50 &5395767515426946539
 Rigidbody2D:
   serializedVersion: 4

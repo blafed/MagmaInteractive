@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -3613,8 +3613,8 @@ TextureImporter:
       DARK Edition Tileset No background_133: -311217979
       DARK Edition Tileset No background_73: -226313833
       DARK Edition Tileset No background_157: -965896763
-      DARK Edition Tileset No background_155: -1041823969
       DARK Edition Tileset No background_15: 1027520173
+      DARK Edition Tileset No background_155: -1041823969
       DARK Edition Tileset No background_12: -456332143
       DARK Edition Tileset No background_1: 1435168411
       DARK Edition Tileset No background_124: -706714046

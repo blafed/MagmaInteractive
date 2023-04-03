@@ -11,11 +11,16 @@ public class GenericWeapon : Weapon
 
     Mana mana => _mana ? _mana : _mana = GetComponentInParent<Mana>();
     Mana _mana;
+
+    AudioSource _audioSource;
+    AudioSource audioSource => _audioSource ? _audioSource : _audioSource = GetComponentInChildren<AudioSource>();
     public override void Attack()
     {
         base.Attack();
         if (mana && manaCost > 0)
             mana.UseMana(manaCost);
+        if (audioSource)
+            audioSource.Play();
     }
 
 
