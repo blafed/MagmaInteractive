@@ -3,13 +3,14 @@ using UnityEngine;
 public class CameraClampArea : MonoBehaviour
 {
     [SerializeField] Rect clampArea = Helper.RectFromCenter(Vector2.zero, new Vector2(100, 100));
-    public Rect clampAreaWorld => Helper.ScaleRect(clampArea, transform);
+    public Rect clampAreaWorld => new Rect(transform.position, transform.localScale);
     private void LateUpdate()
     {
         var obj = CameraControl.instance;
         var targetPosition = obj.center;
 
         var camera = Camera.main;
+        camera.orthographicSize = Mathf.Min(camera.orthographicSize, clampArea.height / 2);
         var size = camera.orthographicSize;
         var aspect = camera.aspect;
 

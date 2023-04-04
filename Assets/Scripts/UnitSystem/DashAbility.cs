@@ -9,6 +9,7 @@ public class DashAbility : MonoBehaviour
     public float stopAfter = 1f;
     public int manaCost = 25;
     public bool flipCollider;
+    public AudioSource audioSource;
 
 
 
@@ -39,6 +40,8 @@ public class DashAbility : MonoBehaviour
         didDash = false;
         if (mana)
             mana.UseMana(manaCost);
+        if (audioSource)
+            audioSource.Play();
     }
 
     private void FixedUpdate()

@@ -4,6 +4,7 @@ public class UIManager : Singleton<UIManager>
 {
     public ProgressBar healthBar;
     public ProgressBar manaBar;
+    public ProgressBar bossBar;
     public DialogText dialogText;
 
     [SerializeField] GameOverPanel gameOverPanel;
@@ -23,6 +24,10 @@ public class UIManager : Singleton<UIManager>
         var hero = Hero.current;
         healthBar.SetAmount(hero.health.hp.ratio);
         manaBar.SetAmount(hero.mana.mana.ratio);
+        if (Boss.current)
+        {
+            bossBar.SetAmount(Boss.current.health.hp.ratio);
+        }
     }
 
 

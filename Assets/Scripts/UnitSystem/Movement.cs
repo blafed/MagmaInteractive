@@ -8,6 +8,9 @@ public class Movement : MonoBehaviour
     public bool allowVerticalMovement = false;
 
 
+    public float speedFactor = 1;
+
+
     Vector3 originScale;
     IWeaponHolder weaponHolder;
 
@@ -21,7 +24,7 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         var movement = new Vector2(inputMovement.x, allowVerticalMovement ? inputMovement.y : 0);
-        transform.position += (Vector3)movement * speed * Time.fixedDeltaTime;
+        transform.position += (Vector3)movement * speed * speedFactor * Time.fixedDeltaTime;
 
         // if (weaponHolder == null || weaponHolder.weapon == null || !weaponHolder.weapon.isAttacking)
         {

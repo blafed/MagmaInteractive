@@ -11,6 +11,10 @@ public class Hero : MonoBehaviour, IWeaponHolder
     public JumpAbility jumpAbility { get; private set; }
     public Movement movement { get; private set; }
     public DashAbility dashAbility { get; private set; }
+    public SprintAbility sprintAbility { get; private set; }
+
+
+    public int collectedCoins { get; set; }
 
 
     public Weapon weapon { get; private set; }
@@ -33,6 +37,7 @@ public class Hero : MonoBehaviour, IWeaponHolder
         dashAbility = GetComponent<DashAbility>();
         grounding = GetComponent<Grounding>();
         mana = GetComponent<Mana>();
+        sprintAbility = GetComponentInChildren<SprintAbility>();
 
 
         health.onKilled += () =>
@@ -104,6 +109,14 @@ public class Hero : MonoBehaviour, IWeaponHolder
             }
 
             var inputMovement = inp.movement;
+            if (inp.sprint && sprintAbility.CanSprint() && inputMovement.x != 0)
+            {
+                sprintAbility.SetSprinting(true);
+            }
+            else
+            {
+                sprintAbility.SetSprinting(false);
+            }
             movement.inputMovement = inputMovement.normalized;
 
         }

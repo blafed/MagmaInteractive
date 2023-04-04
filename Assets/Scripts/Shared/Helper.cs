@@ -8,7 +8,7 @@ public static class Helper
 
     public static Rect ScaleRect(Rect rect, Transform transform)
     {
-        return RectFromCenter(rect.center + (Vector2)transform.position, Vector2.Scale(rect.size, transform.lossyScale));
+        return RectFromCenter(rect.position + (Vector2)transform.position, Vector2.Scale(rect.size, transform.lossyScale));
     }
 
 

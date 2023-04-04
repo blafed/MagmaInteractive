@@ -14,6 +14,7 @@ public class HeroShape : Shape
         Jump,
         Fall,
         Hurt,
+        Sprint,
 
     }
 
@@ -31,6 +32,7 @@ public class HeroShape : Shape
     protected override string GetNewAnimationState()
     {
         string animationState;
+
         if (hero.dashAbility.isDashing)
         {
             state = State.Dash;
@@ -53,11 +55,16 @@ public class HeroShape : Shape
         {
             state = State.Idle;
         }
+        if (hero.sprintAbility.isSprinting)
+        {
+            state = State.Sprint;
+        }
 
         if (hero.health.takeDamageTimer.elabsed < .5f)
         {
             state = State.Hurt;
         }
+
 
 
         animationState = state.ToString();
@@ -82,6 +89,7 @@ public class HeroShape : Shape
         {
             animationState = "Die";
         }
+
         return animationState;
     }
 

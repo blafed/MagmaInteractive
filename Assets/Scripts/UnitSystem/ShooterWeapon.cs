@@ -12,12 +12,16 @@ public class ShooterWeapon : GenericWeapon
     public GameObject effectPrefab;
     public bool parentEffectToThis = true;
 
+    public float playAudioDelay = 0;
+
     public float postAttackTime = .5f;
     public float projectileSpeed = 10;
     public float projetileLifeTime = .5f;
 
 
     bool didAttack = false;
+
+    protected override bool autoPlayAudio => false;
 
     public override bool CanAttack() => base.CanAttack() && delay.isDone && reload.isDone;
     public override void Attack()
@@ -27,6 +31,13 @@ public class ShooterWeapon : GenericWeapon
         didAttack = false;
         delay.Start();
         reload.Start();
+        Invoke(nameof(PlayAudio), playAudioDelay);
+    }
+
+    void PlayAudio()
+    {
+        if (audioSource)
+            audioSource.Play();
     }
 
     protected virtual GameObject SpawnProjectile()
