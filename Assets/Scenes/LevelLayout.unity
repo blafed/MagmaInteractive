@@ -6942,6 +6942,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2245211423218642765, guid: bdd2440e93698c1478550ef0afbde11d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245211423862998522, guid: bdd2440e93698c1478550ef0afbde11d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2245211423990127680, guid: bdd2440e93698c1478550ef0afbde11d, type: 3}
       propertyPath: m_Name
       value: Grid
