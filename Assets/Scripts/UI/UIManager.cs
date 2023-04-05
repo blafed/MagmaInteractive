@@ -8,6 +8,7 @@ public class UIManager : Singleton<UIManager>
     public DialogText dialogText;
 
     [SerializeField] GameOverPanel gameOverPanel;
+    [SerializeField] GameObject bossUI;
 
 
     void Start()
@@ -22,6 +23,7 @@ public class UIManager : Singleton<UIManager>
     void Update()
     {
         var hero = Hero.current;
+        bossUI.SetActive(Boss.current);
         healthBar.SetAmount(hero.health.hp.ratio);
         manaBar.SetAmount(hero.mana.mana.ratio);
         if (Boss.current)

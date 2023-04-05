@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4842054221597991627}
   - component: {fileID: 4842054221597991624}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: -2674157703251108595}
   - component: {fileID: -5237674902295927415}
   - component: {fileID: 5744286599220467950}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}

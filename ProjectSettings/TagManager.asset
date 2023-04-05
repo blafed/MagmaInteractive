@@ -20,7 +20,7 @@ TagManager:
   - EnemyProjectile
   - NonGround
   - Ghost
-  - 
+  - Item
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UnderBackground
+    uniqueID: 1310237919
+    locked: 0
   - name: Background
     uniqueID: 1887579887
     locked: 0

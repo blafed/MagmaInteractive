@@ -49,7 +49,7 @@ public class SprintAbility : MonoBehaviour
             if (audioSource.isPlaying)
                 audioSource.Stop();
         }
-
-        effect.SetActive(isSprinting);
+        if (effect)
+            effect.SetActive(isSprinting);
     }
 }

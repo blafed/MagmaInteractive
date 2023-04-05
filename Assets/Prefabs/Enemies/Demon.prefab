@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 928731717754667899}
   - component: {fileID: 928731717754667892}
   - component: {fileID: 928731717754667898}
+  - component: {fileID: 961979060}
   m_Layer: 10
-  m_Name: demon_cleave_1
+  m_Name: shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,6 +106,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &961979060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928731717754667894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3f6a3b90887dc4983d34da545bdfb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationInfos: []
 --- !u!1 &928731718101989281
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,15 +166,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animationName: Attack1
   manaCost: 0
-  damage: 10
+  damage: 25
   range: 1.02
   delay:
-    value: 0.3
+    value: 0.8
   reload:
-    value: 1
+    value: 1.5
   projectilePrefab: {fileID: 7726113639188400290, guid: 3de77532eac03a445b5c9df0ae0948ee, type: 3}
   effectPrefab: {fileID: 0}
   parentEffectToThis: 1
+  playAudioDelay: 0.8
   postAttackTime: 0.5
   projectileSpeed: 10
   projetileLifeTime: 0.5
@@ -174,9 +189,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: aeb676bf5038a98498df0c7a0928edfd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2d76d0d6154586140ad4e54ac88b0bca, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.397
   m_Pitch: 1.36
   Loop: 0
   Mute: 0
@@ -275,6 +290,8 @@ GameObject:
   - component: {fileID: 928731718712448944}
   - component: {fileID: 928731718712448951}
   - component: {fileID: 928731718712448950}
+  - component: {fileID: 1923408419}
+  - component: {fileID: 1923408427}
   m_Layer: 10
   m_Name: Demon
   m_TagString: Untagged
@@ -366,7 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxFollowDistance: 5
   minStopDistance: 1
-  speed: 1.5
+  speed: 2.5
   allowVerticalMovement: 0
 --- !u!50 &928731718712448951
 Rigidbody2D:
@@ -383,8 +400,8 @@ Rigidbody2D:
   m_Mass: 20
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 0.5
+  m_Material: {fileID: 6200000, guid: 2aab3191979ef2944895bbd557d97ddb, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -403,3 +420,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialAttackDelay:
     value: 0.5
+--- !u!114 &1923408419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928731718712448941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab78785a88b09484d88193f13662be3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+--- !u!114 &1923408427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928731718712448941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a465ab2cdbb58cf43ab544ae1b5fb3ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
