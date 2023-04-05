@@ -41,6 +41,8 @@ public class GenericEnemy : Enemy
 
     protected override void WhileTargetExist()
     {
+        if (health.isKilled)
+            return;
         base.WhileTargetExist();
         WeaponTryAttack();
     }

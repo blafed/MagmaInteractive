@@ -16,11 +16,11 @@ public class Hero : MonoBehaviour, IWeaponHolder
 
     public int collectedCoins { get; set; }
 
-
+    public bool hasWin { get; set; }
     public Weapon weapon { get; private set; }
-    [SerializeField] Weapon defaultWeapon;
-    [SerializeField] Weapon chargedWeapon;
-    [SerializeField] Weapon ultimateWeapon;
+    [SerializeField] public Weapon defaultWeapon;
+    [SerializeField] public Weapon chargedWeapon;
+    [SerializeField] public Weapon ultimateWeapon;
 
     public List<Key> keys = new List<Key>();
 

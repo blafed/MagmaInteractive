@@ -4,6 +4,8 @@ using UnityEngine;
 [DefaultExecutionOrder(-100)]
 public class GameLevel : MonoBehaviour
 {
+    [Min(1)]
+    public int levelNumber = 1;
     public static GameLevel current { get; private set; }
 
     public event System.Action onGameOver;
@@ -21,16 +23,16 @@ public class GameLevel : MonoBehaviour
 
 
 
-    public void Win()
-    {
-        gameOverResult = GameOverResult.Win;
-        onGameOver?.Invoke();
-    }
-    public void Lose()
-    {
-        gameOverResult = GameOverResult.Lose;
-        onGameOver?.Invoke();
-    }
+    // public void Win()
+    // {
+    //     gameOverResult = GameOverResult.Win;
+    //     onGameOver?.Invoke();
+    // }
+    // public void Lose()
+    // {
+    //     gameOverResult = GameOverResult.Lose;
+    //     onGameOver?.Invoke();
+    // }
 }
 
 

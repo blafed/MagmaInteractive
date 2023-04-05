@@ -11,5 +11,9 @@ public class Boss : MonoBehaviour
         if (!current)
             current = this;
         health = GetComponent<Health>();
+        health.onKilled += () =>
+        {
+            GameManager.instance.Win();
+        };
     }
 }

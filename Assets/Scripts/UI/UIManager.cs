@@ -8,6 +8,7 @@ public class UIManager : Singleton<UIManager>
     public DialogText dialogText;
 
     [SerializeField] GameOverPanel gameOverPanel;
+    [SerializeField] GameObject winPanel;
     [SerializeField] GameObject bossUI;
 
 
@@ -36,6 +37,16 @@ public class UIManager : Singleton<UIManager>
     public void SetDialog(string text)
     {
         dialogText.SetText(text);
+    }
+
+
+    public void ShowWinPopup()
+    {
+        winPanel.SetActive(true);
+    }
+    public void PlayAgainFromStart()
+    {
+        GameManager.instance.PlayFromStart();
     }
 
 }

@@ -12,6 +12,6 @@ public class GameOverPanel : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameManager.instance.RestartLevel();
     }
 }

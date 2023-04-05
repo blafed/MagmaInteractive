@@ -89,6 +89,8 @@ public class HeroShape : Shape
         {
             animationState = "Die";
         }
+        if (hero.hasWin)
+            animationState = "Win";
 
         return animationState;
     }

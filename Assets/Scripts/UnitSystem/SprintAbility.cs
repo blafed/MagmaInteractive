@@ -7,7 +7,7 @@ public class SprintAbility : MonoBehaviour
     [SerializeField]
     GameObject effect;
     AudioSource audioSource;
-    public float manaConsumption = 300;
+    public float manaCost = 300;
     Hero hero;
 
     public bool isSprinting { get; private set; }
@@ -41,7 +41,7 @@ public class SprintAbility : MonoBehaviour
             hero.movement.speedFactor = boost;
             if (!audioSource.isPlaying)
                 audioSource.Play();
-            hero.mana.mana.current -= manaConsumption * Time.fixedDeltaTime / 60;
+            hero.mana.mana.current -= manaCost * Time.fixedDeltaTime / 60;
         }
         else
         {
