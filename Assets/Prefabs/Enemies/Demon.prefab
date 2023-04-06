@@ -171,14 +171,14 @@ MonoBehaviour:
   delay:
     value: 0.8
   reload:
-    value: 1.5
-  projectilePrefab: {fileID: 7726113639188400290, guid: 3de77532eac03a445b5c9df0ae0948ee, type: 3}
+    value: 2
+  projectilePrefab: {fileID: 7726113639188400290, guid: a8d49e5ff6c9ac942a989cf5ce366c77, type: 3}
   effectPrefab: {fileID: 0}
   parentEffectToThis: 1
   playAudioDelay: 0.8
   postAttackTime: 0.5
-  projectileSpeed: 10
-  projetileLifeTime: 0.5
+  projectileSpeed: 12
+  projetileLifeTime: 0.25
 --- !u!82 &928731718101989287
 AudioSource:
   m_ObjectHideFlags: 0
@@ -292,6 +292,8 @@ GameObject:
   - component: {fileID: 928731718712448950}
   - component: {fileID: 1923408419}
   - component: {fileID: 1923408427}
+  - component: {fileID: 7769581240642403264}
+  - component: {fileID: 600083707}
   m_Layer: 10
   m_Name: Demon
   m_TagString: Untagged
@@ -383,8 +385,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxFollowDistance: 5
   minStopDistance: 1
-  speed: 2.5
+  speed: 2
   allowVerticalMovement: 0
+  maxUnreachableDuration:
+    value: 1
+  unreachableThreshold: -0.01
 --- !u!50 &928731718712448951
 Rigidbody2D:
   serializedVersion: 4
@@ -400,7 +405,7 @@ Rigidbody2D:
   m_Mass: 20
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.5
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 2aab3191979ef2944895bbd557d97ddb, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -419,7 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialAttackDelay:
-    value: 0.5
+    value: 0
 --- !u!114 &1923408419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,3 +450,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a465ab2cdbb58cf43ab544ae1b5fb3ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7769581240642403264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928731718712448941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca9bc166d51b014bb2814191d8ed5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondJumpManaCost: 10
+  interval:
+    value: 2
+  maxJumps: 1
+  jumpForce: 6
+  secondJumpMultiplier: 1.2
+  secondJumpDelay:
+    value: 0.3
+  jumpEffects: []
+  jumpEffectDelay: 0.2
+--- !u!114 &600083707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928731718712448941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d6e5b959c2ab54e9971afecd68af51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useCustomGroundLayer: 1
+  customGroundLayer:
+    serializedVersion: 2
+    m_Bits: 57847

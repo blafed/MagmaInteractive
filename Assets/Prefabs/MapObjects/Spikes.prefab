@@ -61,7 +61,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 0.84, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &4810583443081299198
 MonoBehaviour:
@@ -119,6 +119,8 @@ MonoBehaviour:
     _currentRatio: 1
   priority: 0
   invincible: 1
+  hitAudioSource: {fileID: 0}
+  killAudioSource: {fileID: 0}
 --- !u!114 &6704418194671557175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 5153551991046526567, guid: 54d0305b555dd96439aa9f3b9f573117, type: 3}
+  delay: 0
 --- !u!1 &4810583443085564526
 GameObject:
   m_ObjectHideFlags: 0

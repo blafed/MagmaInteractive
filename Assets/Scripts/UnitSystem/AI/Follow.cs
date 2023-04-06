@@ -7,11 +7,25 @@ public class Follow : MonoBehaviour
     public float speed = 1;
     public bool allowVerticalMovement = false;
 
+    [Header("Unreachable Properties")]
+    public Duration maxUnreachableDuration = new Duration(1);
+    public float unreachableThreshold = .1f;
+
+    JumpAbility jumpAbility;
+
     public Transform target { get; set; }
 
 
     public bool isCloseToTarget { get; private set; }
 
+    Vector2 unreachableRegisteredPosition;
+    Vector2 lastPosition;
+
+
+    private void Awake()
+    {
+        jumpAbility = GetComponent<JumpAbility>();
+    }
 
     private void FixedUpdate()
     {
@@ -42,7 +56,25 @@ public class Follow : MonoBehaviour
         {
             return;
         }
-
+        if (maxUnreachableDuration.isDone)
+        {
+            unreachableRegisteredPosition = transform.position;
+            maxUnreachableDuration.Start();
+        }
+        bool cannotBeReached = Vector2.Distance(lastPosition, transform.position) < velocity.magnitude * Time.fixedDeltaTime + unreachableThreshold;
+        // if (Vector2.Distance(unreachableRegisteredPosition, transform.position) < maxUnreachableDistance)
+        // {
+        //     cannotBeReached = true;
+        // }
+        if (cannotBeReached)
+        {
+            if (jumpAbility)
+            {
+                if (jumpAbility.CanJump())
+                    jumpAbility.Jump();
+            }
+        }
+        lastPosition = transform.position;
         transform.position += velocity * Time.fixedDeltaTime;
     }
 }

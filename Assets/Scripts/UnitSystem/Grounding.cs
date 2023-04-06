@@ -17,6 +17,10 @@ public class Grounding : MonoBehaviour
     public event System.Action onGrounded;
 
 
+    public bool useCustomGroundLayer = false;
+    public LayerMask customGroundLayer;
+
+
     bool wasGrounded = false;
 
     private void Awake()
@@ -30,7 +34,7 @@ public class Grounding : MonoBehaviour
 
         Vector2 position = transform.position;
         var groundCheckDistance = GroundingConfig.instance.groundCheckDistance;
-        var groundLayer = GroundingConfig.instance.groundLayer;
+        var groundLayer = useCustomGroundLayer ? customGroundLayer : GroundingConfig.instance.groundLayer;
 
         Physics2D.queriesHitTriggers = false;
         isGrounded = Physics2D.Raycast(position, Vector2.down, groundCheckDistance, groundLayer)

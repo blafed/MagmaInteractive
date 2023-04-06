@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boost: 1.5
   effect: {fileID: 0}
-  manaConsumption: 300
+  manaCost: 300
 --- !u!82 &1146176355
 AudioSource:
   m_ObjectHideFlags: 0
@@ -985,6 +985,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d6e5b959c2ab54e9971afecd68af51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useCustomGroundLayer: 0
+  customGroundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &5589301687857657396
 MonoBehaviour:
   m_ObjectHideFlags: 0
