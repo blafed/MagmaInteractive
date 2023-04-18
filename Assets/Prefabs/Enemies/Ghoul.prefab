@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 2140883001774765738}
   - component: {fileID: 2140883001774765739}
   - component: {fileID: 2140883001774765736}
+  - component: {fileID: 3122669926317372286}
   m_Layer: 10
   m_Name: Ghoul
   m_TagString: Untagged
@@ -217,6 +218,8 @@ MonoBehaviour:
     _currentRatio: 1
   priority: 0
   invincible: 0
+  hitAudioSource: {fileID: 0}
+  killAudioSource: {fileID: 0}
 --- !u!114 &2140883001774765741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +254,9 @@ MonoBehaviour:
   minStopDistance: 0.5
   speed: 1
   allowVerticalMovement: 0
+  maxUnreachableDuration:
+    value: 1
+  unreachableThreshold: 0.1
 --- !u!114 &2140883001774765739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +289,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialAttackDelay:
     value: 0.5
+--- !u!114 &3122669926317372286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140883001774765730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcfebc694a9c99144b56c0b0db7918dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkEvery: 0.5
 --- !u!1 &2140883002372735437
 GameObject:
   m_ObjectHideFlags: 0

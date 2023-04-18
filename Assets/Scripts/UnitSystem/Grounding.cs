@@ -9,6 +9,7 @@ public class Grounding : MonoBehaviour
     }
     new Collider2D collider;
 
+    /// Is body currently grounded?
     public bool isGrounded { get; private set; }
     public float groundTime { get; private set; }
     public float airTime { get; private set; }
@@ -50,6 +51,7 @@ public class Grounding : MonoBehaviour
         }
         else
         {
+            groundTime = 0;
             airTime += Time.fixedDeltaTime;
         }
 

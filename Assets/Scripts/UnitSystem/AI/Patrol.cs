@@ -9,6 +9,8 @@ public class Patrol : MonoBehaviour
     public Duration maxPatrolDuration = new Duration(4);
     float movementDir = 1;
 
+    public event System.Func<Vector2, bool> onValidateMovement;
+
 
 
     Vector2 position
@@ -31,19 +33,30 @@ public class Patrol : MonoBehaviour
         startPatrolPoint = position;
     }
 
+    void StopAndGoInverse()
+    {
+        maxPatrolDuration.Start();
+        rest.Start();
+        movementDir *= -1;
+        startPatrolPoint = position;
+    }
     void FixedUpdate()
     {
         if (Vector2.Distance(startPatrolPoint, position) >= distance || maxPatrolDuration.postElabsed > rest.value)
         {
-            maxPatrolDuration.Start();
-            rest.Start();
-            movementDir *= -1;
-            startPatrolPoint = position;
+            StopAndGoInverse();
         }
         else if (rest.isDone)
         {
             var velocity = Vector2.right * speed * movementDir;
-            position += velocity * Time.fixedDeltaTime;
+            var deltaMovement = velocity * Time.fixedDeltaTime;
+            if (!onValidateMovement?.Invoke(deltaMovement) ?? false)
+            {
+                StopAndGoInverse();
+                return;
+            }
+
+            position += deltaMovement;
             transform.localScale = new Vector3(movementDir, transform.localScale.y, transform.localScale.z);
         }
 

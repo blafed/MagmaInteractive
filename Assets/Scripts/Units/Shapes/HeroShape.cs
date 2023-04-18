@@ -15,7 +15,7 @@ public class HeroShape : Shape
         Fall,
         Hurt,
         Sprint,
-
+        Land,
     }
 
 
@@ -58,6 +58,10 @@ public class HeroShape : Shape
         if (hero.sprintAbility.isSprinting)
         {
             state = State.Sprint;
+        }
+        else if (hero.grounding.groundTime < .5f && hero.grounding.isGrounded)
+        {
+            state = State.Land;
         }
 
         if (hero.health.takeDamageTimer.elabsed < .5f)

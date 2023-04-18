@@ -21,6 +21,8 @@ public class Follow : MonoBehaviour
     Vector2 unreachableRegisteredPosition;
     Vector2 lastPosition;
 
+    public event System.Func<Vector2, bool> onValidateMovement;
+
 
     private void Awake()
     {
@@ -75,6 +77,12 @@ public class Follow : MonoBehaviour
             }
         }
         lastPosition = transform.position;
-        transform.position += velocity * Time.fixedDeltaTime;
+        var deltaMovement = velocity * Time.fixedDeltaTime;
+        if (!onValidateMovement?.Invoke(deltaMovement) ?? false)
+        {
+            target = null;
+            return;
+        }
+        transform.position += deltaMovement;
     }
 }
